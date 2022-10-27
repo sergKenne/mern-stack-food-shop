@@ -1,11 +1,18 @@
 import * as React from 'react';
+import Footer from './components/footer';
+
+import Header from './components/header';
+import Home from './pages/Home';
 
 const App: React.FC = () => {
   return (
-    <>
-      <h1>typescript module</h1>
-      <div className="column">Hello from typescript</div>
-    </>
+    <div className="page">
+      <Header />
+
+      <Home />
+
+      <Footer />
+    </div>
   );
 };
 

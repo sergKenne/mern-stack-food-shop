@@ -1,5 +1,7 @@
 import { createRoot, Root } from 'react-dom/client';
-import './styles.scss';
+// import "../node_modules/slick-carousel/slick/slick.css";
+// import '../node_modules/slick-carousel/slick/slick-theme.css';
+import './styles/styles.scss';
 import React from 'react';
 import App from './App';
 const container = document.getElementById('root') as HTMLElement;

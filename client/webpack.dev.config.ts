@@ -9,53 +9,66 @@ interface Configuration extends WebpackConfiguration {
 }
 
 const config: Configuration = {
-    mode: 'development',
-    output: {
-        publicPath: '/',
-    },
-    entry: './src/index.tsx',
-    module: {
-        rules: [
-            {
-                test: /\.(ts|js)x?$/i,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: [
-                            '@babel/preset-env',
-                            '@babel/preset-react',
-                            '@babel/preset-typescript',
-                        ],
-                    },
-                },
-            },
-            {
-                test: /\.(scss|css)$/,
-                use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
-            },
-        ],
-    },
-    resolve: {
-        extensions: ['.tsx', '.ts', '.js'],
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: 'src/index.html',
-        }),
-        new HotModuleReplacementPlugin(),
-        new ForkTsCheckerWebpackPlugin({
-            async: false,
-        }),
+  mode: 'development',
+  output: {
+    publicPath: '/',
+    assetModuleFilename: 'assets/[hash][ext][query]',
+  },
+  entry: './src/index.tsx',
+  module: {
+    rules: [
+      {
+        test: /\.(ts|js)x?$/i,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react',
+              '@babel/preset-typescript',
+            ],
+          },
+        },
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+      {
+        test: /\.(scss|css)$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+        type: 'asset/inline',
+      },
     ],
-    devtool: 'inline-source-map',
-    devServer: {
-        static: path.join(__dirname, 'build'),
-        historyApiFallback: true,
-        port: 4000,
-        open: true,
-        hot: true,
-    },
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+    }),
+    new HotModuleReplacementPlugin(),
+    new ForkTsCheckerWebpackPlugin({
+      async: false,
+    }),
+  ],
+  devtool: 'inline-source-map',
+  devServer: {
+    static: path.join(__dirname, 'build'),
+    historyApiFallback: true,
+    port: 4000,
+    open: true,
+    hot: true,
+  },
 };
 
 export default config;
