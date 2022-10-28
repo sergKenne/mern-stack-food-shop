@@ -22,10 +22,11 @@
     "@types/fork-ts-checker-webpack-plugin": "^0.4.5",
     "@types/jquery": "^3.5.14",
     "@types/mini-css-extract-plugin": "^2.5.1",
-    "@types/node": "^18.11.2",
+    "@types/node": "^18.11.7",
     "@types/postcss-preset-env": "^7.7.0",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "@types/slick-carousel": "^1.6.37",
     "@types/webpack": "^5.28.0",
     "@types/webpack-dev-server": "^4.7.2",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
@@ -56,9 +57,11 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "jquery": "^3.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2",
     "slick-carousel": "^1.8.1"
   }
 }

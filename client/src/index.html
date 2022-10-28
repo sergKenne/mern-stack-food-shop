@@ -1,134 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodShop</title>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald%3A200%2Cregular%2C500%2C700%7CRoboto+Condensed%3Aregular%2C700%7CRoboto%3Aregular%2C500%2C700%2C900%26subset%3Dlatin%2Clatin-ext&amp;display=swap">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-</head>
-<body>
-    <div id="root"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald%3A200%2Cregular%2C500%2C700%7CRoboto+Condensed%3Aregular%2C700%7CRoboto%3Aregular%2C500%2C700%2C900%26subset%3Dlatin%2Clatin-ext&amp;display=swap">
+        <title>FoodShop</title>
+    </head>
+    <body>
+        
+        <div id="root"></div>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script> 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
+        <script type="text/javascript">
 
-    $(document).ready(() => {
+        window.onload = function(){
 
+            window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop + 130;
 
-        $(".single-item").slick({
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            fade: true,
-            // autoplaySpeed: 3000,
-        });
-
-        $(".service-slider").slick({
-            infinite: true,
-            //centerPadding: '60px',
-            speed: 500,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            autoplay: true,
-            // autoplaySpeed: 3000,
-            responsive: [
-                {
-                    breakpoint: 950,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 680,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 470,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                },
-            ]
-        });
-
-        $(".menu-slider").slick({
-            infinite: true,
-            //centerPadding: '60px',
-            speed: 500,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: true,
-            // autoplaySpeed: 3000,
-            responsive: [
-                {
-                    breakpoint: 950,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 680,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 470,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                },
-            ]
-        });
-
-        //personals-slider
-        $(".personals-slider").slick({
-            infinite: true,
-            //centerPadding: '60px',
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            // autoplaySpeed: 3000,
-        });
-
-        window.onscroll = function() {myFunction()};
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop + 130;
-
-        console.log(window)
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
             }
+
+
+            const menuBar = document.getElementById("menu-bar");
+            const navBar = document.getElementById("navbar");
+            const menuClose = document.getElementById("menu-close");
+
+            menuBar.addEventListener("click", ()=>{
+                navBar.classList.add("toggle-sidebar")
+            });
+
+            navbar.addEventListener("click", ()=>{
+                navbar.classList.remove("toggle-sidebar");
+            });
+
+            menuClose.addEventListener("click", ()=>{
+                navBar.classList.remove("toggle-sidebar")
+            })
         }
 
-        $("#menu-bar").click(()=> {
-            $("#navbar").addClass("toggle-sidebar");
-        });
-
-        $("#menu-close, #navbar").click(()=> {
-            $("#navbar").removeClass("toggle-sidebar");
-        })
-
-    });    
-
-    </script>
-</body>
+        </script>
+    </body>
 </html>

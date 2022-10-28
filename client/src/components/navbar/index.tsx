@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -11,60 +12,60 @@ const Navbar = () => {
       <div className="container">
         <ul className="navbar__list">
           <li className="navbar__item">
-            <a href="#" className="navbar__link">
+            <Link to="/product-category/pizza" className="navbar__link">
               <svg className="navbar__link-icon">
                 <use xlinkHref="#svg-icon-2"></use>
               </svg>
               <span className="navbar__link-text">Pizza</span>
-            </a>
+            </Link>
           </li>
           <li className="navbar__item">
-            <a href="#" className="navbar__link">
+            <Link to="/product-category/burgers" className="navbar__link">
               <svg className="navbar__link-icon">
                 <use xlinkHref="#svg-icon-9"></use>
               </svg>
               <span className="navbar__link-text">Burgers</span>
-            </a>
+            </Link>
           </li>
           <li className="navbar__item">
-            <a href="#" className="navbar__link">
+            <Link to="/product-category/sushi" className="navbar__link">
               <svg className="navbar__link-icon">
                 <use xlinkHref="#svg-icon-12"></use>
               </svg>
               <span className="navbar__link-text">Sushi</span>
-            </a>
+            </Link>
           </li>
           <li className="navbar__item">
-            <a href="#" className="navbar__link">
+            <Link to="/product-category/noodles" className="navbar__link">
               <svg className="navbar__link-icon">
                 <use xlinkHref="#svg-icon-10"></use>
               </svg>
               <span className="navbar__link-text">Noodles</span>
-            </a>
+            </Link>
           </li>
           <li className="navbar__item">
-            <a href="#" className="navbar__link">
+            <Link to="/product-category/steaks" className="navbar__link">
               <svg className="navbar__link-icon">
                 <use xlinkHref="#svg-icon-14"></use>
               </svg>
               <span className="navbar__link-text">Steaks</span>
-            </a>
+            </Link>
           </li>
           <li className="navbar__item">
-            <a href="#" className="navbar__link">
+            <Link to="/product-category/desserts" className="navbar__link">
               <svg className="navbar__link-icon">
                 <use xlinkHref="#svg-icon-32"></use>
               </svg>
               <span className="navbar__link-text">Desserts</span>
-            </a>
+            </Link>
           </li>
           <li className="navbar__item">
-            <a href="#" className="navbar__link">
+            <Link to="/product-category/drink" className="navbar__link">
               <svg className="navbar__link-icon">
                 <use xlinkHref="#svg-icon-17"></use>
               </svg>
               <span className="navbar__link-text">Drinks</span>
-            </a>
+            </Link>
           </li>
 
           <li>

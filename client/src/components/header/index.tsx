@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import logo from '../../images/header-logo.svg';
 import Navbar from '../navbar';
-import SpreadSvg from '../spreadSvg';
+import SpreadSvg from '../home/spreadSvg';
 
 const Header = () => {
+
   return (
     <>
       <SpreadSvg />
@@ -47,9 +49,9 @@ const Header = () => {
                 </svg>
               </a>
             </div>
-            <a href="#" className="header__logo">
+            <Link to="/" className="header__logo">
               <img className="header__logo-img" src={logo} alt="logo" />
-            </a>
+            </Link>
             <div className="header__icons">
               <span>
                 <svg className="header__right-svg">
