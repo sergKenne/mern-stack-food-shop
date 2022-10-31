@@ -11,7 +11,7 @@ import icon3 from '../../../images/ban-icon-3.png';
 const Banner = () => {
   return (
     <section className="banner">
-      <div className="single-item">
+      <div className="banner-slider">
         <div className="banner__slide-item">
           <img className="banner__img" src={ban2} alt="banner" />
           <div className="banner__overlay">

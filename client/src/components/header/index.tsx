@@ -67,6 +67,7 @@ const Header = () => {
                 <svg className="header__right-svg header__right-svg--cart">
                   <use xlinkHref="#svg-cart"></use>
                 </svg>
+                <span className="header__total-price">$123.4</span>
               </span>
             </div>
           </div>

@@ -232,6 +232,7 @@ const SpreadSvg: FC = () => {
             stroke="none"
           ></path>
         </symbol>
+        <symbol viewBox="0 0 11 12" id="svg-filter" fill="inherit" stroke="inherit"><path fillRule="evenodd" clipRule="evenodd" d="M0 0H7.61539V1.69231H0V0ZM0 5.07691H9.30769V6.76922H0V5.07691ZM11 10.1538H0V11.8461H11V10.1538Z" fill="inherit" stroke="none"></path></symbol>
       </svg>
     </div>
   );

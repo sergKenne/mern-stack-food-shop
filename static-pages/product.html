@@ -181,139 +181,186 @@
             </div>
         </nav>
         <!-- Products -->
-        <div class="products">
-            <div class="container">
-                <ul class="products__breadcrumb">
-                    <li class="products__b-item">Home </li>
-                    <li class="products__b-item"> - Shop</li>
-                    <li class="products__b-item"> - Steack</li>
+        <div className="products">
+            <div className="container">
+                <ul className="products__breadcrumb">
+                    <li className="products__b-item">Home</li>
+                    <li className="products__b-item">Shop</li>
+                    <li className="products__b-item">Steack</li>
                 </ul>
-                <h1 class="products__title">Steack</h1>
-                <div class="products__inner">
-                    <div class="products__filter">
-                        <h4 class="products__filter-title">Filter by price</h4>
+                <h1 className="products__title">Steack</h1>
+                <div className="products__inner">
+                    <div className="products__filter">
+                        <div>
+                            <div className="products__filter-content">
+                                <h4 className="products__filter-title">Filter by price</h4>
+                                <div className="range">
+                                    <br />
+                                    <button className="card__btn card__btn--range">
+                                        <span>Filter</span>
+                                    </button>
+                                    <br />
+                                </div>
+                                <h4 className="products__filter-title">Cart</h4>
+                                <div className="product__filter-cart">
+                                    <div className="card card--corbage">
+                                        <span className='card__delete-icon'>×</span>
+                                        <div className="card__header card__header--corbage">
+                                            <img src={card} alt="" className="card__img" />
+                                        </div>
+                                        <div className="card__body">
+                                            <h5 className="card__title card__title--corbage">Pizza Bianca</h5>
+                                            <p className="card__description"><span>1</span> × $<span>13.99</span></p>
+                                        </div>
+                                    </div>
+                                    <div className="card card--corbage">
+                                        <span className='card__delete-icon'>×</span>
+                                        <div className="card__header card__header--corbage">
+                                            <img src={card} alt="" className="card__img" />
+                                        </div>
+                                        <div className="card__body">
+                                            <h5 className="card__title card__title--corbage">Pizza Bianca</h5>
+                                            <p className="card__description"><span>1</span> × <span>$13.99</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="products__filter-subtotal">
+                                    <p className="card__description card__description--subtotal">
+                                        <span>Subtotal:</span><span className='card__filter-price'>$13.99</span>
+                                    </p>
+                                </div>
+                                <div className="products__filter-btn">
+                                    <button className="card__btn card__btn--range">
+                                        <span>View Cart</span>
+                                    </button>
+                                    <button className="card__btn card__btn--filter">
+                                        <span>Checkout</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="products__items">
-                        <div class="card products__card">
-                            <div class="card__header">
-                                <img src="images//card4.jpg" alt="" class="card__img">
+                    <div className="products__items">
+                        <div className="card products__card">
+                            <div className="card__header">
+                                <img src={card} alt="" className="card__img" />
                             </div>
-                            <div class="card__body">
-                                <h5 class="card__title">Pizza Bianca</h5>
-                                <div class="card__icons">
-                                    <img class="card__icon" src="images/vegan.svg" alt="">
+                            <div className="card__body">
+                                <h5 className="card__title">Pizza Bianca</h5>
+                                <div className="card__icons">
+                                    <img className="card__icon" src="images/vegan.svg" alt="" />
                                     <span>
-                                        <svg class="card__icon"><use xlink:href="#svg-info"></use></svg>
+                                        <svg className="card__icon"><use xlinkHref="#svg-info"></use></svg>
                                     </span>
                                 </div>
-                                <p class="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
-                                <div class="card__price">$13.99</div>
-                                <button class="card__btn">
-                                    <svg class="card__btn-icon"><use xlink:href="#svg-cart"></use></svg>
+                                <p className="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
+                                <div className="card__price">$13.99</div>
+                                <button className="card__btn">
+                                    <svg className="card__btn-icon"><use xlinkHref="#svg-cart"></use></svg>
                                     <span>add to card</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="card products__card">
-                            <div class="card__header">
-                                <img src="images//card4.jpg" alt="" class="card__img">
+                        <div className="card products__card">
+                            <div className="card__header">
+                                <img src={card} alt="" className="card__img" />
                             </div>
-                            <div class="card__body">
-                                <h5 class="card__title">Pizza Bianca</h5>
-                                <div class="card__icons">
-                                    <img class="card__icon" src="images/vegan.svg" alt="">
+                            <div className="card__body">
+                                <h5 className="card__title">Pizza Bianca</h5>
+                                <div className="card__icons">
+                                    <img className="card__icon" src="images/vegan.svg" alt="" />
                                     <span>
-                                        <svg class="card__icon"><use xlink:href="#svg-info"></use></svg>
+                                        <svg className="card__icon"><use xlinkHref="#svg-info"></use></svg>
                                     </span>
                                 </div>
-                                <p class="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
-                                <div class="card__price">$13.99</div>
-                                <button class="card__btn">
-                                    <svg class="card__btn-icon"><use xlink:href="#svg-cart"></use></svg>
+                                <p className="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
+                                <div className="card__price">$13.99</div>
+                                <button className="card__btn">
+                                    <svg className="card__btn-icon"><use xlinkHref="#svg-cart"></use></svg>
                                     <span>add to card</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="card products__card">
-                            <div class="card__header">
-                                <img src="images//card4.jpg" alt="" class="card__img">
+                        <div className="card products__card">
+                            <div className="card__header">
+                                <img src={card} alt="" className="card__img" />
                             </div>
-                            <div class="card__body">
-                                <h5 class="card__title">Pizza Bianca</h5>
-                                <div class="card__icons">
-                                    <img class="card__icon" src="images/vegan.svg" alt="">
+                            <div className="card__body">
+                                <h5 className="card__title">Pizza Bianca</h5>
+                                <div className="card__icons">
+                                    <img className="card__icon" src="images/vegan.svg" alt="" />
                                     <span>
-                                        <svg class="card__icon"><use xlink:href="#svg-info"></use></svg>
+                                        <svg className="card__icon"><use xlinkHref="#svg-info"></use></svg>
                                     </span>
                                 </div>
-                                <p class="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
-                                <div class="card__price">$13.99</div>
-                                <button class="card__btn">
-                                    <svg class="card__btn-icon"><use xlink:href="#svg-cart"></use></svg>
+                                <p className="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
+                                <div className="card__price">$13.99</div>
+                                <button className="card__btn">
+                                    <svg className="card__btn-icon"><use xlinkHref="#svg-cart"></use></svg>
                                     <span>add to card</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="card products__card">
-                            <div class="card__header">
-                                <img src="images//card4.jpg" alt="" class="card__img">
+                        <div className="card products__card">
+                            <div className="card__header">
+                                <img src={card} alt="" className="card__img" />
                             </div>
-                            <div class="card__body">
-                                <h5 class="card__title">Pizza Bianca</h5>
-                                <div class="card__icons">
-                                    <img class="card__icon" src="images/vegan.svg" alt="">
+                            <div className="card__body">
+                                <h5 className="card__title">Pizza Bianca</h5>
+                                <div className="card__icons">
+                                    <img className="card__icon" src="images/vegan.svg" alt="" />
                                     <span>
-                                        <svg class="card__icon"><use xlink:href="#svg-info"></use></svg>
+                                        <svg className="card__icon"><use xlinkHref="#svg-info"></use></svg>
                                     </span>
                                 </div>
-                                <p class="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
-                                <div class="card__price">$13.99</div>
-                                <button class="card__btn">
-                                    <svg class="card__btn-icon"><use xlink:href="#svg-cart"></use></svg>
+                                <p className="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
+                                <div className="card__price">$13.99</div>
+                                <button className="card__btn">
+                                    <svg className="card__btn-icon"><use xlinkHref="#svg-cart"></use></svg>
                                     <span>add to card</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="card products__card">
-                            <div class="card__header">
-                                <img src="images//card4.jpg" alt="" class="card__img">
+                        <div className="card products__card">
+                            <div className="card__header">
+                                <img src={card} alt="" className="card__img" />
                             </div>
-                            <div class="card__body">
-                                <h5 class="card__title">Pizza Bianca</h5>
-                                <div class="card__icons">
-                                    <img class="card__icon" src="images/vegan.svg" alt="">
+                            <div className="card__body">
+                                <h5 className="card__title">Pizza Bianca</h5>
+                                <div className="card__icons">
+                                    <img className="card__icon" src="images/vegan.svg" alt="" />
                                     <span>
-                                        <svg class="card__icon"><use xlink:href="#svg-info"></use></svg>
+                                        <svg className="card__icon"><use xlinkHref="#svg-info"></use></svg>
                                     </span>
                                 </div>
-                                <p class="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
-                                <div class="card__price">$13.99</div>
-                                <button class="card__btn">
-                                    <svg class="card__btn-icon"><use xlink:href="#svg-cart"></use></svg>
+                                <p className="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
+                                <div className="card__price">$13.99</div>
+                                <button className="card__btn">
+                                    <svg className="card__btn-icon"><use xlinkHref="#svg-cart"></use></svg>
                                     <span>add to card</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="card products__card">
-                            <div class="card__header">
-                                <img src="images//card4.jpg" alt="" class="card__img">
+                        <div className="card products__card">
+                            <div className="card__header">
+                                <img src={card} alt="" className="card__img" />
                             </div>
-                            <div class="card__body">
-                                <h5 class="card__title">Pizza Bianca</h5>
-                                <div class="card__icons">
-                                    <img class="card__icon" src="images/vegan.svg" alt="">
+                            <div className="card__body">
+                                <h5 className="card__title">Pizza Bianca</h5>
+                                <div className="card__icons">
+                                    <img className="card__icon" src="images/vegan.svg" alt="" />
                                     <span>
-                                        <svg class="card__icon"><use xlink:href="#svg-info"></use></svg>
+                                        <svg className="card__icon"><use xlinkHref="#svg-info"></use></svg>
                                     </span>
                                 </div>
-                                <p class="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
-                                <div class="card__price">$13.99</div>
-                                <button class="card__btn">
-                                    <svg class="card__btn-icon"><use xlink:href="#svg-cart"></use></svg>
-                                    <span>add to card</span>
-                                </button>
-                                
-                                <button class="card__counter">
+                                <p className="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
+                                <div className="card__price">$13.99</div>
+                                {/* <button className="card__btn">
+                                  <svg className="card__btn-icon"><use xlinkHref="#svg-cart"></use></svg>
+                                  <span>add to card</span>
+                              </button> */}
+
+                                <button className="card__counter">
                                     <span>-</span>
                                     <span>1</span>
                                     <span>+</span>
