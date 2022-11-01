@@ -47,22 +47,23 @@ const Products = () => {
                                 <svg className="header__bar-svg"><use xlinkHref="#svg-close"></use></svg>
                             </span>
                             <h4 className="products__filter-title">Filter by price</h4>
-                            <div className="range">
-                                <br />
-                                <button className="card__btn card__btn--range">
-                                    <span>Filter</span>
-                                </button>
-                                <br />
+                            <div className="products__range">
                                 <InputRange
                                     maxValue={345}
                                     minValue={0}
                                     value={rangeValue.value}
                                     //ref={rangeRef}
                                     data-filter="range"
-                                    onChange={(value) => {setRangeValue({ value });}}
-                                    //onChangeComplete={(value) => console.log(value)}
+                                    onChange={(value) => { setRangeValue({ value }); }}
+                                //onChangeComplete={(value) => console.log(value)}
                                 />
+                                <p className="card__description">Price: <span>${rangeValue.value.min}</span> - <span>${rangeValue.value.max}</span></p>
                             </div>
+
+                            <button className="card__btn card__btn--range">
+                                <span>Filter</span>
+                            </button>
+                            <br/><br/>
                             <h4 className="products__filter-title">Cart</h4>
                             <div className="product__filter-cart">
                                 <div className="card card--corbage">
