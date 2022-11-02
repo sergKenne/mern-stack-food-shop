@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 
 //import * as slick from 'slick-carousel';
 require('../../../node_modules/slick-carousel/slick/slick.js');
@@ -15,6 +16,9 @@ import ServiceHome from '../../components/home/serviceHome';
 import { setSlider } from '../../utils';
 
 const Home = () => {
+  
+
+
   useEffect(() => {
     setSlider();
   },[])

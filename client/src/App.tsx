@@ -6,14 +6,16 @@ import Detail from './pages/detailScreen';
 import Home from './pages/homeScreen';
 import Products from './pages/productsScreen';
 import Error from './pages/errorScreen';
+import { useDispatch } from 'react-redux';
+import fetchProducts from './redux/reducers/productsReducer/actionCreators';
+
 
 const App: React.FC = () => {
-  
+  const dispatch = useDispatch()
   useEffect(() => {
-    fetch('http://localhost:3000/Burgers')
-      .then(response => response.json())
-    .then(data => console.log(data))
-  },[])
+    dispatch(fetchProducts())
+  }, [dispatch])
+  
   return (
     <div className="page">
       <Header />

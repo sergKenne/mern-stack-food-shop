@@ -233,6 +233,7 @@ const SpreadSvg: FC = () => {
           ></path>
         </symbol>
         <symbol viewBox="0 0 11 12" id="svg-filter" fill="inherit" stroke="inherit"><path fillRule="evenodd" clipRule="evenodd" d="M0 0H7.61539V1.69231H0V0ZM0 5.07691H9.30769V6.76922H0V5.07691ZM11 10.1538H0V11.8461H11V10.1538Z" fill="inherit" stroke="none"></path></symbol>
+        <symbol viewBox="0 0 16 16" id="svg-close-round" fill="inherit" stroke="inherit"><path fillRule="evenodd" clipRule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8.03027 7.32321L11.3534 4.00005L12.0605 4.70715L8.73738 8.03032L11.7782 11.0711L11.0711 11.7782L8.03027 8.73743L4.98948 11.7782L4.28237 11.0711L7.32317 8.03032L4 4.70715L4.70711 4.00005L8.03027 7.32321Z" fill="inherit" stroke="none"></path></symbol>
       </svg>
     </div>
   );

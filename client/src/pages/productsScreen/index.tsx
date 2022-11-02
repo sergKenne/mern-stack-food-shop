@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import InputRange from 'react-input-range';
 import 'react-input-range/lib/css/index.css';
+import Card from '../../components/commons/card';
 
 
 import card from '../../images/card1.jpg'
@@ -14,7 +15,7 @@ const Products = () => {
     
 
     //const rangeRef = useRef()
-
+    
 
     
 
@@ -103,7 +104,11 @@ const Products = () => {
                         </div>
                     </div>
                     <div className="products__items">
-                        <div className="card products__card">
+                        {
+                            [1, 2, 3, 4, 5, 6, 7, 8].map((prod, ind) => <Card key={ind} />)
+                        }
+                    
+                        {/* <div className="card products__card">
                             <div className="card__header">
                                 <img src={card} alt="" className="card__img" />
                             </div>
@@ -217,10 +222,10 @@ const Products = () => {
                                 </div>
                                 <p className="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
                                 <div className="card__price">$13.99</div>
-                                {/* <button className="card__btn">
+                                <button className="card__btn">
                                   <svg className="card__btn-icon"><use xlinkHref="#svg-cart"></use></svg>
                                   <span>add to card</span>
-                              </button> */}
+                                </button>
 
                                 <button className="card__counter">
                                     <span>-</span>
@@ -228,7 +233,7 @@ const Products = () => {
                                     <span>+</span>
                                 </button>
                             </div>
-                        </div>
+                        </div>  */}
                     </div>
                 </div>
             </div>
