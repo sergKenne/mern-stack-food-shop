@@ -2,7 +2,7 @@
     "pizza": [
         {
             "id": 1,
-            "img": "pizza1",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza1.jpg",
             "category": "pizza",
             "type": "spicy",
             "name": "Pizza Calabria",
@@ -27,7 +27,7 @@
         },
         {
             "id": 2,
-            "img": "pizza2",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza2.jpg",
             "category": "pizza",
             "type": "spicy",
             "name": "Pizza Pepperoni",
@@ -50,7 +50,7 @@
         },
         {
             "id": 3,
-            "img": "pizza3",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza3.jpg",
             "category": "pizza",
             "type": "spicy",
             "name": "Pizza Regina",
@@ -76,7 +76,7 @@
         },
         {
             "id": 4,
-            "img": "pizza4",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza4.jpg",
             "category": "pizza",
             "type": "vegetarian",
             "name": "Pizza Bianca",
@@ -100,7 +100,7 @@
         },
         {
             "id": 5,
-            "img": "pizza5",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza5.jpg",
             "category": "pizza",
             "type": "vegetarian",
             "name": "Pizza Funghi",
@@ -124,7 +124,7 @@
         },
         {
             "id": 6,
-            "img": "pizza6",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza6.jpg",
             "category": "pizza",
             "type": "vegetarian",
             "name": "Pizza Margherita",
@@ -147,7 +147,7 @@
         },
         {
             "id": 7,
-            "img": "pizza7",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza7.jpg",
             "category": "pizza",
             "type": "vegetarian",
             "name": "Pizza Regina",
@@ -173,7 +173,7 @@
         },
         {
             "id": 8,
-            "img": "pizza8",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza8.jpg",
             "category": "pizza",
             "type": "mushrooms",
             "name": "Pizza Carne",
@@ -200,7 +200,7 @@
         },
         {
             "id": 9,
-            "img": "pizza9",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza9.jpg",
             "category": "pizza",
             "type": "mushrooms",
             "name": "Pizza Regina",
@@ -226,7 +226,7 @@
         },
         {
             "id": 10,
-            "img": "pizza10",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza10.jpg",
             "category": "pizza",
             "type": "meat",
             "name": "Pizza Calabria",
@@ -251,7 +251,7 @@
         },
         {
             "id": 11,
-            "img": "pizza11",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza11.jpg",
             "category": "pizza",
             "type": "meat",
             "name": "Pizza Regina",
@@ -276,7 +276,7 @@
         },
         {
             "id": 12,
-            "img": "pizza12",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza12.jpg",
             "category": "pizza",
             "type": "seafood",
             "name": "Pizza Formaggi",
@@ -302,7 +302,7 @@
         },
         {
             "id": 13,
-            "img": "pizza11",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza13.jpg",
             "category": "pizza",
             "type": "seafood",
             "name": "Pizza Milano",
@@ -327,7 +327,7 @@
         },
         {
             "id": 14,
-            "img": "pizza11",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza14.jpg",
             "category": "pizza",
             "type": "seafood",
             "name": "Pizza Vesuvio",
@@ -355,7 +355,7 @@
     "Burgers": [
         {
             "id": 15,
-            "img": "burger1",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger1.jpg",
             "category": "burgers",
             "type": "spice",
             "name": "California burger",
@@ -373,7 +373,7 @@
         },
         {
             "id": 16,
-            "img": "burger2",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger2.jpg",
             "category": "burgers",
             "type": "spice",
             "name": "Chili burger",
@@ -391,7 +391,7 @@
         },
         {
             "id": 17,
-            "img": "burger3",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger3.jpg",
             "category": "burgers",
             "type": "spice",
             "name": "Double slugburger",
@@ -409,7 +409,7 @@
         },
         {
             "id": 18,
-            "img": "burger4",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger4.jpg",
             "category": "burgers",
             "type": "meat",
             "name": "Buffalo burger",
@@ -424,7 +424,7 @@
         },
         {
             "id": 19,
-            "img": "burger5",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger5.jpg",
             "category": "burgers",
             "type": "meat",
             "name": "Double Buffalo burger",
@@ -439,7 +439,7 @@
         },
         {
             "id": 20,
-            "img": "burger6",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger6.jpg",
             "category": "burgers",
             "type": "meat",
             "name": " Double slugburger",
@@ -454,7 +454,7 @@
         },
         {
             "id": 21,
-            "img": "burger7",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger7.jpg",
             "category": "burgers",
             "type": "fish",
             "name": "Bacon cheeseburger",
@@ -469,7 +469,7 @@
         },
         {
             "id": 22,
-            "img": "burger8",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger8.jpg",
             "category": "burgers",
             "type": "fish",
             "name": "Slugburger",
@@ -484,7 +484,7 @@
         },
         {
             "id": 23,
-            "img": "burger9",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger9.jpg",
             "category": "burgers",
             "type": "chicken",
             "name": "California burger",
@@ -499,7 +499,7 @@
         },
         {
             "id": 24,
-            "img": "burger10",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger10.jpg",
             "category": "burgers",
             "type": "chicken",
             "name": "Chili burger",
@@ -514,7 +514,7 @@
         },
         {
             "id": 25,
-            "img": "burger11",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger11.jpg",
             "category": "burgers",
             "type": "chicken",
             "name": "Double Buffalo burger",
@@ -531,7 +531,7 @@
     "sushi": [
         {
             "id": 26,
-            "img": "sushi1",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi1.jpg",
             "category": "sushi",
             "name": "Dynamite Roll",
             "ingredients": [
@@ -545,7 +545,7 @@
         },
         {
             "id": 27,
-            "img": "sushi2",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi2.jpg",
             "category": "sushi",
             "name": "Crunch Roll",
             "ingredients": [
@@ -559,7 +559,7 @@
         },
         {
             "id": 28,
-            "img": "sushi3",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi3.jpg",
             "category": "sushi",
             "name": "Dragon Roll",
             "ingredients": [
@@ -573,7 +573,7 @@
         },
         {
             "id": 29,
-            "img": "sushi4",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi4.jpg",
             "category": "sushi",
             "name": "Dynamite Roll",
             "ingredients": [
@@ -587,7 +587,7 @@
         },
         {
             "id": 30,
-            "img": "sushi5",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi5.jpg",
             "category": "sushi",
             "name": "Rainbow Roll",
             "ingredients": [
@@ -601,7 +601,7 @@
         },
         {
             "id": 31,
-            "img": "sushi6",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi6.jpg",
             "category": "sushi",
             "name": "Shrimp Tempura Roll",
             "ingredients": [
@@ -615,7 +615,7 @@
         },
         {
             "id": 32,
-            "img": "sushi7",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi7.jpg",
             "category": "sushi",
             "name": "Spicy Tuna Roll",
             "ingredients": [
@@ -629,7 +629,7 @@
         },
         {
             "id": 33,
-            "img": "sushi8",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi8.jpg",
             "category": "sushi",
             "name": "Spider Roll",
             "ingredients": [
@@ -643,7 +643,7 @@
         },
         {
             "id": 34,
-            "img": "sushi9",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi9.jpg",
             "category": "sushi",
             "name": "Tekkamaki",
             "ingredients": [
@@ -657,7 +657,7 @@
         },
         {
             "id": 35,
-            "img": "sushi10",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi10.jpg",
             "category": "sushi",
             "name": "Vegetable Roll",
             "ingredients": [
@@ -673,7 +673,7 @@
     "noodles": [
         {
             "id": 36,
-            "img": "noodles1",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/noodles1.jpg",
             "category": "noodles",
             "name": "Chicken Chow Mein",
             "ingredients": [
@@ -687,7 +687,7 @@
         },
         {
             "id": 37,
-            "img": "noodles2",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/noodles2.jpg",
             "category": "noodles",
             "name": "Japanese udon noodles",
             "ingredients": [
@@ -701,7 +701,7 @@
         },
         {
             "id": 38,
-            "img": "noodles3",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/noodles3.jpg",
             "category": "noodles",
             "name": "Shanghai Stir-Fry Noodles",
             "ingredients": [
@@ -715,7 +715,7 @@
         },
         {
             "id": 39,
-            "img": "noodles4",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/noodles4.jpg",
             "category": "noodles",
             "name": "Sichuan Noodles",
             "ingredients": [
@@ -729,7 +729,7 @@
         },
         {
             "id": 40,
-            "img": "noodles5",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/noodles5.jpg",
             "category": "noodles",
             "name": "Singapore Noodles",
             "ingredients": [
@@ -745,7 +745,7 @@
     "steaks": [
         {
             "id": 41,
-            "img": "steaks1",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks1.jpg",
             "category": "steaks",
             "name": "American Wagyu Eye of Rib",
             "ingredients": [
@@ -759,7 +759,7 @@
         },
         {
             "id": 42,
-            "img": "steaks2",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks2.jpg",
             "category": "steaks",
             "name": "Australian Wagyu",
             "ingredients": [
@@ -773,7 +773,7 @@
         },
         {
             "id": 43,
-            "img": "steaks3",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks3.jpg",
             "category": "steaks",
             "name": "Crispy Skin Duck",
             "ingredients": [
@@ -787,7 +787,7 @@
         },
         {
             "id": 44,
-            "img": "steaks4",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks4.jpg",
             "category": "steaks",
             "name": "Filet Mignon",
             "ingredients": [
@@ -801,7 +801,7 @@
         },
         {
             "id": 45,
-            "img": "steaks5",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks5.jpg",
             "category": "steaks",
             "name": "Petite Filet Mignon",
             "ingredients": [
@@ -815,7 +815,7 @@
         },
         {
             "id": 46,
-            "img": "steaks6",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks6.jpg",
             "category": "steaks",
             "name": "Salmon Steak",
             "ingredients": [
@@ -829,7 +829,7 @@
         },
         {
             "id": 47,
-            "img": "steaks7",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks7.jpg",
             "category": "steaks",
             "name": "Taste of Wagyu",
             "ingredients": [
@@ -843,7 +843,7 @@
         },
         {
             "id": 48,
-            "img": "steaks8",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks8.jpg",
             "category": "steaks",
             "name": "Wagyu Filet",
             "ingredients": [
@@ -857,7 +857,7 @@
         },
         {
             "id": 49,
-            "img": "steaks9",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks9.jpg",
             "category": "steaks",
             "name": "Wagyu Rib Cap",
             "ingredients": [
@@ -871,7 +871,7 @@
         },
         {
             "id": 50,
-            "img": "steaks10",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks10.jpg",
             "category": "steaks",
             "name": "Wagyu Skirt Steak",
             "ingredients": [
@@ -887,7 +887,7 @@
     "desserts": [
         {
             "id": 51,
-            "img": "desserts1",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/desserts1.jpg",
             "category": "desserts",
             "name": "Amandine",
             "ingredients": [
@@ -901,7 +901,7 @@
         },
         {
             "id": 52,
-            "img": "desserts2",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/desserts2.jpg",
             "category": "desserts",
             "name": "Cheesecake",
             "ingredients": [
@@ -915,7 +915,7 @@
         },
         {
             "id": 53,
-            "img": "desserts3",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/desserts3.jpg",
             "category": "desserts",
             "name": "Chocolate cake",
             "ingredients": [
@@ -929,7 +929,7 @@
         },
         {
             "id": 54,
-            "img": "desserts4",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/desserts4.jpg",
             "category": "desserts",
             "name": "Chocolate ice cream",
             "ingredients": [
@@ -943,7 +943,7 @@
         },
         {
             "id": 55,
-            "img": "desserts5",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/desserts5.jpg",
             "category": "desserts",
             "name": "Fondant",
             "ingredients": [
@@ -957,7 +957,7 @@
         },
         {
             "id": 56,
-            "img": "desserts6",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/desserts6.jpg",
             "category": "desserts",
             "name": "Tiramisu",
             "ingredients": [
@@ -973,7 +973,7 @@
     "drinks": [
         {
             "id": 57,
-            "img": "drinks1",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/drinks1.jpg",
             "category": "drinks",
             "name": "Melon smoothie",
             "ingredients": [
@@ -987,7 +987,7 @@
         },
         {
             "id": 58,
-            "img": "drinks2",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/drinks2.jpg",
             "category": "drinks",
             "name": "Peach smoothie",
             "ingredients": [
@@ -1001,7 +1001,7 @@
         },
         {
             "id": 59,
-            "img": "drinks3",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/drinks3.jpg",
             "category": "drinks",
             "name": "Raspberry smoothie",
             "ingredients": [
@@ -1015,7 +1015,7 @@
         },
         {
             "id": 60,
-            "img": "drinks4",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/drinks4.jpg",
             "category": "drinks",
             "name": "Strawberry smoothie",
             "ingredients": [
@@ -1029,7 +1029,7 @@
         },
         {
             "id": 61,
-            "img": "drinks5",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/drinks5.jpg",
             "category": "drinks",
             "name": "Watermelon smoothie",
             "ingredients": [
@@ -1043,7 +1043,7 @@
         },
         {
             "id": 62,
-            "img": "drinks6",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/drinks6.jpg",
             "category": "drinks",
             "name": "Strawberry smoothie",
             "ingredients": [
@@ -1057,7 +1057,7 @@
         },
         {
             "id": 63,
-            "img": "drinks7",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/drinks7.jpg",
             "category": "drinks",
             "name": "Watermelon smoothie",
             "ingredients": [
@@ -1073,7 +1073,7 @@
     "products-categories": [
         {
             "id": 1,
-            "img": "pizza1",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza1.jpg",
             "category": "pizza",
             "type": "spicy",
             "name": "Pizza Calabria",
@@ -1097,65 +1097,66 @@
             }
         },
         {
-            "id": 22,
-            "img": "burger8",
-            "category": "burgers",
-            "type": "fish",
-            "name": "Slugburger",
-            "ingredients": ["Served on a bun with mustard, pickles, onion, and French fries"],
-            "composition": {
-                "isPerpper": false,
-                "isVegan": false
-            },
-            "price": "24.29"
-        },
-        {
-            "id": 16,
-            "img": "burger2",
-            "category": "burgers",
-            "type": "spice",
-            "name": "Chili burger",
-            "ingredients": ["A hamburger served with chicken", "lettuce", "tomato", "and onion"],
+            "id": 2,
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza2.jpg",
+            "category": "pizza",
+            "type": "spicy",
+            "name": "Pizza Pepperoni",
+            "ingredients": [
+                "Tomato Sauce",
+                "Mozzarella",
+                "Double Pepperoni"
+            ],
             "composition": {
                 "isPerpper": true,
                 "isVegan": false
             },
-            "price": "17.39"
+            "price": "16.49",
+            "info": {
+                "calories": 163,
+                "totalFat": 4.7,
+                "carbohydrates": 20.4,
+                "protein": 7.6
+            }
         },
         {
-            "id": 17,
-            "img": "burger3",
-            "category": "burgers",
-            "type": "spice",
-            "name": "Double slugburger",
-            "ingredients": ["A hamburger served with chicken", "lettuce", "tomato", "and onion"],
+            "id": 3,
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza3.jpg",
+            "category": "pizza",
+            "type": "spicy",
+            "name": "Pizza Regina",
+            "ingredients": [
+                "Tomato Sauce",
+                "Mozzarella",
+                "Parmesan",
+                "Ham",
+                "Mushrooms",
+                "Black Olives"
+            ],
             "composition": {
                 "isPerpper": true,
-                "isVegan": false
+                "isVegan": true
             },
-            "price": "7.9"
+            "price": "7.71",
+            "info": {
+                "calories": 163,
+                "totalFat": 4.7,
+                "carbohydrates": 20.4,
+                "protein": 7.6
+            }
         },
-        {
-            "id": 23,
-            "img": "burger9",
-            "category": "burgers",
-            "type": "chicken",
-            "name": "California burger",
-            "ingredients": ["A hamburger served with chicken, lettuce, tomato, and onion"],
-            "composition": {
-                "isPerpper": true,
-                "isVegan": false
-            },
-            "price": "18.49"
-        },
-
         {
             "id": 4,
-            "img": "pizza4",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza4.jpg",
             "category": "pizza",
             "type": "vegetarian",
             "name": "Pizza Bianca",
-            "ingredients": ["Garlic Flatbread with Mozzarella", "Parmesan", "Garlic", "Rosemary"],
+            "ingredients": [
+                "Garlic Flatbread with Mozzarella",
+                "Parmesan",
+                "Garlic",
+                "Rosemary"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": true
@@ -1170,11 +1171,16 @@
         },
         {
             "id": 5,
-            "img": "pizza5",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza5.jpg",
             "category": "pizza",
             "type": "vegetarian",
             "name": "Pizza Funghi",
-            "ingredients": ["Tomato Sauce", "Mozzarella", "Mushrooms", "Thyme"],
+            "ingredients": [
+                "Tomato Sauce",
+                "Mozzarella",
+                "Mushrooms",
+                "Thyme"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": true
@@ -1188,25 +1194,16 @@
             }
         },
         {
-            "id": 23,
-            "img": "burger9",
-            "category": "burgers",
-            "type": "chicken",
-            "name": "California burger",
-            "ingredients": ["A hamburger served with chicken, lettuce, tomato, and onion"],
-            "composition": {
-                "isPerpper": true,
-                "isVegan": false
-            },
-            "price": "18.49"
-        },
-        {
             "id": 6,
-            "img": "pizza6",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza6.jpg",
             "category": "pizza",
             "type": "vegetarian",
             "name": "Pizza Margherita",
-            "ingredients": ["Tomato Sauce", "Mozzarella", "Basil"],
+            "ingredients": [
+                "Tomato Sauce",
+                "Mozzarella",
+                "Basil"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": true
@@ -1221,7 +1218,7 @@
         },
         {
             "id": 7,
-            "img": "pizza7",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza7.jpg",
             "category": "pizza",
             "type": "vegetarian",
             "name": "Pizza Regina",
@@ -1247,7 +1244,7 @@
         },
         {
             "id": 8,
-            "img": "pizza8",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza8.jpg",
             "category": "pizza",
             "type": "mushrooms",
             "name": "Pizza Carne",
@@ -1274,7 +1271,7 @@
         },
         {
             "id": 9,
-            "img": "pizza9",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza9.jpg",
             "category": "pizza",
             "type": "mushrooms",
             "name": "Pizza Regina",
@@ -1299,65 +1296,8 @@
             }
         },
         {
-            "id": 2,
-            "img": "pizza2",
-            "category": "pizza",
-            "type": "spicy",
-            "name": "Pizza Pepperoni",
-            "ingredients": ["Tomato Sauce", "Mozzarella", "Double Pepperoni"],
-            "composition": {
-                "isPerpper": true,
-                "isVegan": false
-            },
-            "price": "16.49",
-            "info": {
-                "calories": 163,
-                "totalFat": 4.7,
-                "carbohydrates": 20.4,
-                "protein": 7.6
-            }
-        },
-        {
-            "id": 46,
-            "img": "steaks6",
-            "category": "steaks",
-            "name": "Salmon Steak",
-            "ingredients": ["Petite Salmon Steak & Steamed Maine Lobster"],
-            "composition": {
-                "isPerpper": false,
-                "isVegan": false
-            },
-            "price": "31.69"
-        },
-        {
-            "id": 3,
-            "img": "pizza3",
-            "category": "pizza",
-            "type": "spicy",
-            "name": "Pizza Regina",
-            "ingredients": [
-                "Tomato Sauce",
-                "Mozzarella",
-                "Parmesan",
-                "Ham",
-                "Mushrooms",
-                "Black Olives"
-            ],
-            "composition": {
-                "isPerpper": true,
-                "isVegan": true
-            },
-            "price": "7.71",
-            "info": {
-                "calories": 163,
-                "totalFat": 4.7,
-                "carbohydrates": 20.4,
-                "protein": 7.6
-            }
-        },
-        {
             "id": 10,
-            "img": "pizza10",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza10.jpg",
             "category": "pizza",
             "type": "meat",
             "name": "Pizza Calabria",
@@ -1382,7 +1322,7 @@
         },
         {
             "id": 11,
-            "img": "pizza11",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza11.jpg",
             "category": "pizza",
             "type": "meat",
             "name": "Pizza Regina",
@@ -1407,7 +1347,7 @@
         },
         {
             "id": 12,
-            "img": "pizza12",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza12.jpg",
             "category": "pizza",
             "type": "seafood",
             "name": "Pizza Formaggi",
@@ -1433,7 +1373,7 @@
         },
         {
             "id": 13,
-            "img": "pizza11",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza13.jpg",
             "category": "pizza",
             "type": "seafood",
             "name": "Pizza Milano",
@@ -1458,7 +1398,7 @@
         },
         {
             "id": 14,
-            "img": "pizza11",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza14.jpg",
             "category": "pizza",
             "type": "seafood",
             "name": "Pizza Vesuvio",
@@ -1484,25 +1424,67 @@
         },
         {
             "id": 15,
-            "img": "burger1",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger1.jpg",
             "category": "burgers",
             "type": "spice",
             "name": "California burger",
-            "ingredients": ["A hamburger served with chicken", "lettuce", "tomato", "and onion"],
+            "ingredients": [
+                "A hamburger served with chicken",
+                "lettuce",
+                "tomato",
+                "and onion"
+            ],
             "composition": {
                 "isPerpper": true,
                 "isVegan": false
             },
             "price": "17.39"
         },
-
+        {
+            "id": 16,
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger2.jpg",
+            "category": "burgers",
+            "type": "spice",
+            "name": "Chili burger",
+            "ingredients": [
+                "A hamburger served with chicken",
+                "lettuce",
+                "tomato",
+                "and onion"
+            ],
+            "composition": {
+                "isPerpper": true,
+                "isVegan": false
+            },
+            "price": "17.39"
+        },
+        {
+            "id": 17,
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger3.jpg",
+            "category": "burgers",
+            "type": "spice",
+            "name": "Double slugburger",
+            "ingredients": [
+                "A hamburger served with chicken",
+                "lettuce",
+                "tomato",
+                "and onion"
+            ],
+            "composition": {
+                "isPerpper": true,
+                "isVegan": false
+            },
+            "price": "7.9"
+        },
         {
             "id": 18,
-            "img": "burger4",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger4.jpg",
             "category": "burgers",
             "type": "meat",
             "name": "Buffalo burger",
-            "ingredients": ["Buffalo burgers have less cholesterol and less fat"],
+            "ingredients": [
+                "Buffalo burgers have less cholesterol and less fat"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1511,11 +1493,13 @@
         },
         {
             "id": 19,
-            "img": "burger5",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger5.jpg",
             "category": "burgers",
             "type": "meat",
             "name": "Double Buffalo burger",
-            "ingredients": ["Buffalo burgers have less cholesterol and less fat"],
+            "ingredients": [
+                "Buffalo burgers have less cholesterol and less fat"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1524,11 +1508,13 @@
         },
         {
             "id": 20,
-            "img": "burger6",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger6.jpg",
             "category": "burgers",
             "type": "meat",
             "name": " Double slugburger",
-            "ingredients": ["Served on a bun with mustard, pickles, onion, and French fries"],
+            "ingredients": [
+                "Served on a bun with mustard, pickles, onion, and French fries"
+            ],
             "composition": {
                 "isPerpper": true,
                 "isVegan": false
@@ -1537,25 +1523,58 @@
         },
         {
             "id": 21,
-            "img": "burger7",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger7.jpg",
             "category": "burgers",
             "type": "fish",
             "name": "Bacon cheeseburger",
-            "ingredients": ["Hamburger with bacon and cheese"],
+            "ingredients": [
+                "Hamburger with bacon and cheese"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
             },
             "price": "25.49"
         },
-
+        {
+            "id": 22,
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger8.jpg",
+            "category": "burgers",
+            "type": "fish",
+            "name": "Slugburger",
+            "ingredients": [
+                "Served on a bun with mustard, pickles, onion, and French fries"
+            ],
+            "composition": {
+                "isPerpper": false,
+                "isVegan": false
+            },
+            "price": "24.29"
+        },
+        {
+            "id": 23,
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger9.jpg",
+            "category": "burgers",
+            "type": "chicken",
+            "name": "California burger",
+            "ingredients": [
+                "A hamburger served with chicken, lettuce, tomato, and onion"
+            ],
+            "composition": {
+                "isPerpper": true,
+                "isVegan": false
+            },
+            "price": "18.49"
+        },
         {
             "id": 24,
-            "img": "burger10",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger10.jpg",
             "category": "burgers",
             "type": "chicken",
             "name": "Chili burger",
-            "ingredients": ["A hamburger served with chicken, chili, lettuce, tomato, and onion"],
+            "ingredients": [
+                "A hamburger served with chicken, chili, lettuce, tomato, and onion"
+            ],
             "composition": {
                 "isPerpper": true,
                 "isVegan": false
@@ -1564,11 +1583,13 @@
         },
         {
             "id": 25,
-            "img": "burger11",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/burger11.jpg",
             "category": "burgers",
             "type": "chicken",
             "name": "Double Buffalo burger",
-            "ingredients": ["Buffalo burgers have less cholesterol and less fat"],
+            "ingredients": [
+                "Buffalo burgers have less cholesterol and less fat"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1577,10 +1598,12 @@
         },
         {
             "id": 26,
-            "img": "sushi1",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi1.jpg",
             "category": "sushi",
             "name": "Dynamite Roll",
-            "ingredients": ["Shrimp tempura, yellowtail, bean sprouts, carrots"],
+            "ingredients": [
+                "Shrimp tempura, yellowtail, bean sprouts, carrots"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1589,10 +1612,12 @@
         },
         {
             "id": 27,
-            "img": "sushi2",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi2.jpg",
             "category": "sushi",
             "name": "Crunch Roll",
-            "ingredients": ["Spicy tuna, crispy seaweed, tempura"],
+            "ingredients": [
+                "Spicy tuna, crispy seaweed, tempura"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1601,10 +1626,12 @@
         },
         {
             "id": 28,
-            "img": "sushi3",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi3.jpg",
             "category": "sushi",
             "name": "Dragon Roll",
-            "ingredients": ["Eel, crab, cucumber / avocado outside, eel sauce"],
+            "ingredients": [
+                "Eel, crab, cucumber / avocado outside, eel sauce"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1613,10 +1640,12 @@
         },
         {
             "id": 29,
-            "img": "sushi4",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi4.jpg",
             "category": "sushi",
             "name": "Dynamite Roll",
-            "ingredients": ["Shrimp tempura, yellowtail, bean sprouts, carrots"],
+            "ingredients": [
+                "Shrimp tempura, yellowtail, bean sprouts, carrots"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1625,10 +1654,12 @@
         },
         {
             "id": 30,
-            "img": "sushi5",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi5.jpg",
             "category": "sushi",
             "name": "Rainbow Roll",
-            "ingredients": ["Fish cake/imitation crab, avocado, cucumber, tuna"],
+            "ingredients": [
+                "Fish cake/imitation crab, avocado, cucumber, tuna"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1637,10 +1668,12 @@
         },
         {
             "id": 31,
-            "img": "sushi6",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi6.jpg",
             "category": "sushi",
             "name": "Shrimp Tempura Roll",
-            "ingredients": ["Shrimp tempura, avocado, tempura flakes, eel sauce"],
+            "ingredients": [
+                "Shrimp tempura, avocado, tempura flakes, eel sauce"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1649,10 +1682,12 @@
         },
         {
             "id": 32,
-            "img": "sushi7",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi7.jpg",
             "category": "sushi",
             "name": "Spicy Tuna Roll",
-            "ingredients": ["Tuna, mayo, chili sauce, avocado, carrot"],
+            "ingredients": [
+                "Tuna, mayo, chili sauce, avocado, carrot"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1661,10 +1696,12 @@
         },
         {
             "id": 33,
-            "img": "sushi8",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi8.jpg",
             "category": "sushi",
             "name": "Spider Roll",
-            "ingredients": ["Soft-shell crab tempura, cucumber, avocado, spicy mayo"],
+            "ingredients": [
+                "Soft-shell crab tempura, cucumber, avocado, spicy mayo"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1673,10 +1710,12 @@
         },
         {
             "id": 34,
-            "img": "sushi9",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi9.jpg",
             "category": "sushi",
             "name": "Tekkamaki",
-            "ingredients": ["One or more of the parts is deep-fried in a light batter"],
+            "ingredients": [
+                "One or more of the parts is deep-fried in a light batter"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1685,10 +1724,12 @@
         },
         {
             "id": 35,
-            "img": "sushi10",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/sushi10.jpg",
             "category": "sushi",
             "name": "Vegetable Roll",
-            "ingredients": ["Cucumber, fresh carrot, scallion, avocado"],
+            "ingredients": [
+                "Cucumber, fresh carrot, scallion, avocado"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1696,36 +1737,27 @@
             "price": "4.29"
         },
         {
-            "id": 60,
-            "img": "drinks4",
-            "category": "drinks",
-            "name": "Strawberry smoothie",
-            "ingredients": ["Strawberry, almond milk, chia seeds"],
+            "id": 36,
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/noodles1.jpg",
+            "category": "noodles",
+            "name": "Chicken Chow Mein",
+            "ingredients": [
+                "Chicken, bok choy, celery, red bell pepper, oyster sauce"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
             },
-            "price": "8.21"
+            "price": "7.29"
         },
-        {
-            "id": 61,
-            "img": "drinks5",
-            "category": "drinks",
-            "name": "Watermelon smoothie",
-            "ingredients": ["Watermelon, almond milk, chia seeds"],
-            "composition": {
-                "isPerpper": false,
-                "isVegan": false
-            },
-            "price": "5.38"
-        },
-
         {
             "id": 37,
-            "img": "noodles2",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/noodles2.jpg",
             "category": "noodles",
             "name": "Japanese udon noodles",
-            "ingredients": ["Japanese udon noodles with salmon fish"],
+            "ingredients": [
+                "Japanese udon noodles with salmon fish"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1734,10 +1766,12 @@
         },
         {
             "id": 38,
-            "img": "noodles3",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/noodles3.jpg",
             "category": "noodles",
             "name": "Shanghai Stir-Fry Noodles",
-            "ingredients": ["Beef meat, celery, red bell pepper, oyster sauce"],
+            "ingredients": [
+                "Beef meat, celery, red bell pepper, oyster sauce"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1746,10 +1780,12 @@
         },
         {
             "id": 39,
-            "img": "noodles4",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/noodles4.jpg",
             "category": "noodles",
             "name": "Sichuan Noodles",
-            "ingredients": ["Combines chicken, mushrooms, and a spicy sauce"],
+            "ingredients": [
+                "Combines chicken, mushrooms, and a spicy sauce"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1758,10 +1794,12 @@
         },
         {
             "id": 40,
-            "img": "noodles5",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/noodles5.jpg",
             "category": "noodles",
             "name": "Singapore Noodles",
-            "ingredients": ["Combines chicken, shrimp, and a spicy sauce"],
+            "ingredients": [
+                "Combines chicken, shrimp, and a spicy sauce"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1770,10 +1808,12 @@
         },
         {
             "id": 41,
-            "img": "steaks1",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks1.jpg",
             "category": "steaks",
             "name": "American Wagyu Eye of Rib",
-            "ingredients": ["American Wagyu Eye of Rib, Snake River Farm, ID"],
+            "ingredients": [
+                "American Wagyu Eye of Rib, Snake River Farm, ID"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1782,10 +1822,12 @@
         },
         {
             "id": 42,
-            "img": "steaks2",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks2.jpg",
             "category": "steaks",
             "name": "Australian Wagyu",
-            "ingredients": ["Australian Wagyu New York, Queensland AUS"],
+            "ingredients": [
+                "Australian Wagyu New York, Queensland AUS"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1793,35 +1835,13 @@
             "price": "43.39"
         },
         {
-            "id": 62,
-            "img": "drinks6",
-            "category": "drinks",
-            "name": "Strawberry smoothie",
-            "ingredients": ["Strawberry, almond milk, chia seeds"],
-            "composition": {
-                "isPerpper": false,
-                "isVegan": false
-            },
-            "price": "5.38"
-        },
-        {
-            "id": 36,
-            "img": "noodles1",
-            "category": "noodles",
-            "name": "Chicken Chow Mein",
-            "ingredients": ["Chicken, bok choy, celery, red bell pepper, oyster sauce"],
-            "composition": {
-                "isPerpper": false,
-                "isVegan": false
-            },
-            "price": "7.29"
-        },
-        {
             "id": 43,
-            "img": "steaks3",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks3.jpg",
             "category": "steaks",
             "name": "Crispy Skin Duck",
-            "ingredients": ["Crispy Skin Duck, Roasted Persimmon, Chiogga Beet, Confit Dumplings"],
+            "ingredients": [
+                "Crispy Skin Duck, Roasted Persimmon, Chiogga Beet, Confit Dumplings"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1830,10 +1850,12 @@
         },
         {
             "id": 44,
-            "img": "steaks4",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks4.jpg",
             "category": "steaks",
             "name": "Filet Mignon",
-            "ingredients": ["Filet Mignon, Double R Ranch, WA"],
+            "ingredients": [
+                "Filet Mignon, Double R Ranch, WA"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1842,23 +1864,40 @@
         },
         {
             "id": 45,
-            "img": "steaks5",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks5.jpg",
             "category": "steaks",
             "name": "Petite Filet Mignon",
-            "ingredients": ["Petite Filet Mignon, Double R Ranch, WA"],
+            "ingredients": [
+                "Petite Filet Mignon, Double R Ranch, WA"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
             },
             "price": "7.29"
         },
-
+        {
+            "id": 46,
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks6.jpg",
+            "category": "steaks",
+            "name": "Salmon Steak",
+            "ingredients": [
+                "Petite Salmon Steak & Steamed Maine Lobster"
+            ],
+            "composition": {
+                "isPerpper": false,
+                "isVegan": false
+            },
+            "price": "31.69"
+        },
         {
             "id": 47,
-            "img": "steaks7",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks7.jpg",
             "category": "steaks",
             "name": "Taste of Wagyu",
-            "ingredients": ["Taste of Wagyu – New York – Picanha – Japanese"],
+            "ingredients": [
+                "Taste of Wagyu – New York – Picanha – Japanese"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1867,10 +1906,12 @@
         },
         {
             "id": 48,
-            "img": "steaks8",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks8.jpg",
             "category": "steaks",
             "name": "Wagyu Filet",
-            "ingredients": ["Wagyu Filet, Snake River Farms"],
+            "ingredients": [
+                "Wagyu Filet, Snake River Farms"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1879,10 +1920,12 @@
         },
         {
             "id": 49,
-            "img": "steaks9",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks9.jpg",
             "category": "steaks",
             "name": "Wagyu Rib Cap",
-            "ingredients": ["American Wagyu Rib Cap, Snake River Farm, ID"],
+            "ingredients": [
+                "American Wagyu Rib Cap, Snake River Farm, ID"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1891,10 +1934,12 @@
         },
         {
             "id": 50,
-            "img": "steaks10",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/steaks10.jpg",
             "category": "steaks",
             "name": "Wagyu Skirt Steak",
-            "ingredients": ["American Wagyu Skirt Steak, Snake River Farm, ID"],
+            "ingredients": [
+                "American Wagyu Skirt Steak, Snake River Farm, ID"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1903,10 +1948,12 @@
         },
         {
             "id": 51,
-            "img": "desserts1",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/desserts1.jpg",
             "category": "desserts",
             "name": "Amandine",
-            "ingredients": ["Flour, full-fat milk, egg yolks, whipping cream"],
+            "ingredients": [
+                "Flour, full-fat milk, egg yolks, whipping cream"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1915,10 +1962,12 @@
         },
         {
             "id": 52,
-            "img": "desserts2",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/desserts2.jpg",
             "category": "desserts",
             "name": "Cheesecake",
-            "ingredients": ["Sour cream, farmer’s cheese, cream cheese"],
+            "ingredients": [
+                "Sour cream, farmer’s cheese, cream cheese"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1927,10 +1976,12 @@
         },
         {
             "id": 53,
-            "img": "desserts3",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/desserts3.jpg",
             "category": "desserts",
             "name": "Chocolate cake",
-            "ingredients": ["Flour, full-fat milk, cocoa, egg yolks, whipping cream"],
+            "ingredients": [
+                "Flour, full-fat milk, cocoa, egg yolks, whipping cream"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1939,10 +1990,12 @@
         },
         {
             "id": 54,
-            "img": "desserts4",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/desserts4.jpg",
             "category": "desserts",
             "name": "Chocolate ice cream",
-            "ingredients": ["Full-fat milk, cocoa, egg yolks, whipping cream"],
+            "ingredients": [
+                "Full-fat milk, cocoa, egg yolks, whipping cream"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1951,10 +2004,12 @@
         },
         {
             "id": 55,
-            "img": "desserts5",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/desserts5.jpg",
             "category": "desserts",
             "name": "Fondant",
-            "ingredients": ["Flour, cocoa powder, egg yolks, whipping cream"],
+            "ingredients": [
+                "Flour, cocoa powder, egg yolks, whipping cream"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1963,10 +2018,12 @@
         },
         {
             "id": 56,
-            "img": "desserts6",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/desserts6.jpg",
             "category": "desserts",
             "name": "Tiramisu",
-            "ingredients": ["Biscotti savoiardi, espresso, egg yolks, whole milk"],
+            "ingredients": [
+                "Biscotti savoiardi, espresso, egg yolks, whole milk"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1975,10 +2032,12 @@
         },
         {
             "id": 57,
-            "img": "drinks1",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/drinks1.jpg",
             "category": "drinks",
             "name": "Melon smoothie",
-            "ingredients": ["Melon, almond milk, chia seeds"],
+            "ingredients": [
+                "Melon, almond milk, chia seeds"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1987,10 +2046,12 @@
         },
         {
             "id": 58,
-            "img": "drinks2",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/drinks2.jpg",
             "category": "drinks",
             "name": "Peach smoothie",
-            "ingredients": ["Peach, almond milk, chia seeds"],
+            "ingredients": [
+                "Peach, almond milk, chia seeds"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
@@ -1999,23 +2060,68 @@
         },
         {
             "id": 59,
-            "img": "drinks3",
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/drinks3.jpg",
             "category": "drinks",
             "name": "Raspberry smoothie",
-            "ingredients": ["Raspberry, almond milk, chia seeds"],
+            "ingredients": [
+                "Raspberry, almond milk, chia seeds"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false
             },
             "price": "7.33"
         },
-
         {
-            "id": 63,
-            "img": "drinks7",
+            "id": 60,
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/drinks4.jpg",
+            "category": "drinks",
+            "name": "Strawberry smoothie",
+            "ingredients": [
+                "Strawberry, almond milk, chia seeds"
+            ],
+            "composition": {
+                "isPerpper": false,
+                "isVegan": false
+            },
+            "price": "8.21"
+        },
+        {
+            "id": 61,
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/drinks5.jpg",
             "category": "drinks",
             "name": "Watermelon smoothie",
-            "ingredients": ["Watermelon, almond milk, chia seeds"],
+            "ingredients": [
+                "Watermelon, almond milk, chia seeds"
+            ],
+            "composition": {
+                "isPerpper": false,
+                "isVegan": false
+            },
+            "price": "5.38"
+        },
+        {
+            "id": 62,
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/drinks6.jpg",
+            "category": "drinks",
+            "name": "Strawberry smoothie",
+            "ingredients": [
+                "Strawberry, almond milk, chia seeds"
+            ],
+            "composition": {
+                "isPerpper": false,
+                "isVegan": false
+            },
+            "price": "5.38"
+        },
+        {
+            "id": 63,
+            "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/drinks7.jpg",
+            "category": "drinks",
+            "name": "Watermelon smoothie",
+            "ingredients": [
+                "Watermelon, almond milk, chia seeds"
+            ],
             "composition": {
                 "isPerpper": false,
                 "isVegan": false

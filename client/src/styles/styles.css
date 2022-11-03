@@ -2052,6 +2052,23 @@ a {
   margin-bottom: 40px;
 }
 
+.loader {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loader img {
+  width: 40px;
+}
+
 .footer {
   padding-top: 70px;
   padding-bottom: 60px;

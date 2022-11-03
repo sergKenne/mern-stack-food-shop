@@ -6,16 +6,23 @@ import Detail from './pages/detailScreen';
 import Home from './pages/homeScreen';
 import Products from './pages/productsScreen';
 import Error from './pages/errorScreen';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import fetchProducts from './redux/reducers/productsReducer/actionCreators';
+import { ReduxState, TypedDispatch } from './redux/store';
+//import { TypedUseSelectorHook } from 'react-redux';
 
 
 const App: React.FC = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch<TypedDispatch>();
+  const { products } = useSelector((state: ReduxState) => state.products)
+  //const useTypedSelector: TypedUseSelectorHook<ReduxState> = useSelector;
+ 
+  console.log("Products+++++khkhlhlnky:", products);
+  
   useEffect(() => {
     dispatch(fetchProducts())
   }, [dispatch])
-  
+
   return (
     <div className="page">
       <Header />

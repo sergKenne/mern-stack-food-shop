@@ -1402,6 +1402,19 @@ a {
   }
 }
 
+.loader {
+  //border: 1px solid red;
+  height: inherit;
+  //min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 40px;
+  }
+
+}
+
 .footer {
   
   padding-top: 70px;
