@@ -104,10 +104,10 @@ const Products = () => {
                         </div>
                     </div>
                     <div className="products__items">
-                        {
+                        {/* {
                             [1, 2, 3, 4, 5, 6, 7, 8].map((prod, ind) => <Card key={ind} />)
                         }
-                    
+                     */}
                         {/* <div className="card products__card">
                             <div className="card__header">
                                 <img src={card} alt="" className="card__img" />

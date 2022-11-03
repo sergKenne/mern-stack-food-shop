@@ -9,23 +9,25 @@ import Error from './pages/errorScreen';
 import { useDispatch, useSelector } from 'react-redux';
 import fetchProducts from './redux/reducers/productsReducer/actionCreators';
 import { ReduxState, TypedDispatch } from './redux/store';
+import { setSlider } from './utils';
+
 //import { TypedUseSelectorHook } from 'react-redux';
 
 
 const App: React.FC = () => {
   const dispatch = useDispatch<TypedDispatch>();
-  const { products } = useSelector((state: ReduxState) => state.products)
+  //const { products } = useSelector((state: ReduxState) => state.products);
+
   //const useTypedSelector: TypedUseSelectorHook<ReduxState> = useSelector;
  
-  console.log("Products+++++khkhlhlnky:", products);
   
   useEffect(() => {
-    dispatch(fetchProducts())
-  }, [dispatch])
+    dispatch(fetchProducts());
+  }, [])
 
   return (
     <div className="page">
-      <Header />
+      <Header/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/detail' element={<Detail />} />

@@ -830,16 +830,24 @@ a {
     }
     &::after {
       content: '';
-      display: block;
+      //display: block;
+      display: none;
       height: 6px;
       background: url(../images/under-icon.svg) repeat;
       width: 50px;
       margin-left: auto;
       margin-right: auto;
       margin-top: 10px;
+      
     }
-    &.active {
+    &--active {
       color: #ffffff;
+      &::after {
+        display: block;
+      }
+      &:hover {
+       color: #d0d4da;
+      }
     }
   }
   &__tabs {
@@ -868,7 +876,7 @@ a {
       margin-bottom: 10px;
     }
 
-    &:first-child {
+    &--active {
       background-color: #ffffff;
       color: #1d2331;
     }
@@ -1505,6 +1513,7 @@ a {
   left: 0;
 }
 
+
 .banner-slider {
   .slick-next.slick-arrow,
   .slick-prev.slick-arrow {
@@ -1632,6 +1641,8 @@ a {
     top: 40%;
   }
 }
+
+
 
 //Range Slider
 

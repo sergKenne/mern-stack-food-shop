@@ -9,13 +9,13 @@ const Menu = () => {
         <section className="menu">
             <div className="container">
                 <ul className="menu__nav">
-                    <li className="menu__nav-item active">Burgers</li>
+                    <li className="menu__nav-item menu__nav-item--active">Burgers</li>
                     <li className="menu__nav-item">Pizza</li>
                     <li className="menu__nav-item">Sushi</li>
                     <li className="menu__nav-item">Noodles</li>
                 </ul>
                 <ul className="menu__tabs">
-                    <li className="menu__tabs-item">All</li>
+                    <li className="menu__tabs-item menu__tabs-item--active">All</li>
                     <li className="menu__tabs-item">spicy</li>
                     <li className="menu__tabs-item">vegetarian</li>
                     <li className="menu__tabs-item">mushrooms</li>

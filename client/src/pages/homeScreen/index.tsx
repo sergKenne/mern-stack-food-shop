@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { ReducerState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 require('../../../node_modules/slick-carousel/slick/slick.js');
 
@@ -12,27 +13,30 @@ import Personnels from '../../components/home/personnels';
 import Postes from '../../components/home/postes';
 import ServiceHome from '../../components/home/serviceHome';
 import fetchProducts from '../../redux/reducers/productsReducer/actionCreators';
-import { TypedDispatch } from '../../redux/store';
+import { ReduxState, TypedDispatch } from '../../redux/store';
 import { setSlider } from '../../utils';
 
 const Home = () => {
-  const dispatch = useDispatch<TypedDispatch>()
+
+  const { products } = useSelector((state: ReduxState) => state.products)
+  // const dispatch = useDispatch<TypedDispatch>()
+
   useEffect(() => {
-    setSlider();
-    dispatch(fetchProducts())
-  }, [dispatch])
-  
+    //setSlider();
+    //dispatch(fetchProducts()); //test
+  }, []);
+
   return (
     <>
-        <Banner />
-        <ServiceHome />
-        <Announce />
-        <Menu />
-        <Delivery />
-        <Personnels />
-        <HappyHour />
-        <Postes />
-        <Info/>
+      <Banner />
+      {products.length && <ServiceHome />}
+      <Announce />
+      <Menu />
+      <Delivery />
+      <Personnels />
+      <HappyHour />
+      <Postes />
+      <Info/>
     </>
   );
 };

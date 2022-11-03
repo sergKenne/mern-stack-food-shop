@@ -1,7 +1,7 @@
 import React from 'react'
-import { CardProps } from './type'
+import { CardInfoProps } from './type'
 
-const CardInfo = ({setToggleInfo, toggleInfo}:CardProps) => {
+const CardInfo = ({setToggleInfo, toggleInfo, info}:CardInfoProps) => {
   return (
       <span className='card__info'>
           {toggleInfo && (
@@ -13,10 +13,10 @@ const CardInfo = ({setToggleInfo, toggleInfo}:CardProps) => {
                 <ul className="card__info-list">
                     <li className="card-info-item">Serving Size 1 slice(63 g)</li>
                     <li className="card-info-item">Per Serving:</li>
-                    <li className="card-info-item">Carlories {168}</li>
-                    <li className="card-info-item">Total Fat - {4.7}g</li>
-                    <li className="card-info-item">Carbohydrates - {20.4}g</li>
-                    <li className="card-info-item">Protein - {7.6}g</li>
+                    <li className="card-info-item">Carlories {info.calories}</li>
+                    <li className="card-info-item">Total Fat - {info.totalFat}g</li>
+                    <li className="card-info-item">Carbohydrates - {info.carbohydrates}g</li>
+                    <li className="card-info-item">Protein - {info.protein}g</li>
                 </ul>
             </div>
           )}
