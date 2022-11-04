@@ -8,7 +8,7 @@ import { CardProps } from './type'
 const Card = ({product}:CardProps) => {
     const [toggleBtn, setToggleBtn] = useState<boolean>(true);
     const [toggleInfo, setToggleInfo] = useState<boolean>(false);
-    console.log(product);
+    //console.log(product);
     const {img, info, name, ingredients, price, addClass, composition} = product
    return (
        <div className={`card ${addClass}`}>

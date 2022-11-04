@@ -15,7 +15,8 @@ export type IProduct = {
         totalFat: number,
         carbohydrates: number,
         protein: number
-    }
+    },
+    type?: string;
 
 }
 
