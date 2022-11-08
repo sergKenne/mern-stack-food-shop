@@ -882,7 +882,22 @@ a {
       color: #1d2331;
     }
   }
+  &__wrap-content-tabs {
+    position: relative;
+    //border: 2px solid red;
+    min-height: 500px;
+  }
+  &__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 }
+
+
+
+
 
 .delivery {
   margin-top: 100px;
@@ -1643,6 +1658,11 @@ a {
   }
 }
 
+.hide {
+  opacity: 0;
+  z-index: 0;
+}
+
 
 
 //Range Slider
@@ -1684,3 +1704,4 @@ a {
   }
 
 }
+

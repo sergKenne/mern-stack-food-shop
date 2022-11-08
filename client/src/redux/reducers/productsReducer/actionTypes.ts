@@ -1,5 +1,5 @@
+import { IProduct } from "../../commons.types";
 
-import { IProduct } from './type';
 
 export enum ActionTypes {
   PRODUCT_LIST_REQUEST = 'PRODUCT_LIST_REQUEST',

@@ -1,4 +1,4 @@
-import { IProduct } from './redux/reducers/productsReducer/type';
+
 import jquery from 'jquery';
 const $: JQueryStatic = jquery;
 
@@ -46,6 +46,65 @@ export const setSlider = (): void => {
   });
 
   //Menu slider
+  // $('.menu-slider').slick({
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 950,
+  //       settings: {
+  //         slidesToShow: 3,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 680,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 470,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // });
+
+  //personals-slider
+  $('.personals-slider').slick({
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+  });
+
+  // const tabItem = document.querySelectorAll('.menu__tabs-item'); 
+  // const menuNavItem = document.querySelectorAll('.menu__nav-item');
+
+  // setTabs(tabItem, 'menu__tabs-item--active');
+  // setTabs(menuNavItem, 'menu__nav-item--active');
+
+  // function setTabs(els:any, className:string) {
+  //   els.forEach((item:any) => {
+  //     item.addEventListener('click', () => {
+  //       els.forEach((el:any) => {
+  //         el.classList.remove(className);
+  //       });
+  //       item.classList.add(className);
+  //     });
+  //   });
+  // }
+};
+
+export function setMenuSlider() {
   $('.menu-slider').slick({
     infinite: true,
     speed: 500,
@@ -76,43 +135,21 @@ export const setSlider = (): void => {
       },
     ],
   });
-
-  //personals-slider
-  $('.personals-slider').slick({
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-  });
-
-  // const tabItem = document.querySelectorAll('.menu__tabs-item'); 
-  // const menuNavItem = document.querySelectorAll('.menu__nav-item');
-
-  // setTabs(tabItem, 'menu__tabs-item--active');
-  // setTabs(menuNavItem, 'menu__nav-item--active');
-
-  // function setTabs(els:any, className:string) {
-  //   els.forEach((item:any) => {
-  //     item.addEventListener('click', () => {
-  //       els.forEach((el:any) => {
-  //         el.classList.remove(className);
-  //       });
-  //       item.classList.add(className);
-  //     });
-  //   });
-  // }
-};
+}
 
 
 export function setTabs(els: any, className: string) {
   els.forEach((item: any) => {
     item.addEventListener('click', () => {
       els.forEach((el: any) => {
-        el.classList.remove(className);
+        // if (el.classList.contains(className)) {
+          el.classList.remove(className);
+        // } 
       });
       item.classList.add(className);
     });
   });
 }
+
+
 

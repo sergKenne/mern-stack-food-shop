@@ -60,7 +60,7 @@ const ServiceHome = () => {
                             {loading && <Loader />}
                             <div className="service-slider">
                                 {products.length && products.filter(item => item.category === "pizza").slice(1,6).map((product, ind) => (
-                                    <div key={product.id} className="service__slide-item">
+                                    <div key={`${Math.random()}${new Date()}`} className="service__slide-item">
                                         <Card product={{ ...product, addClass: "service__card" }} />
                                     </div>
                                 ))}
