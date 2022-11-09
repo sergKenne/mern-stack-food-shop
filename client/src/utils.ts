@@ -1,3 +1,4 @@
+import { IProduct } from './redux/commons.types';
 
 import jquery from 'jquery';
 const $: JQueryStatic = jquery;
@@ -150,6 +151,21 @@ export function setTabs(els: any, className: string) {
     });
   });
 }
+
+
+export const getTabsElements = (category: string, products: IProduct[]) => {
+  const productsCat = products.filter(
+    (product) => product.category === category
+  ); 
+  return [
+    ...new Set(
+      productsCat.reduce(
+        (acc: any, curr: any) => (curr.type ? [...acc, curr.type] : acc),
+        []
+      )
+    ),
+  ]; 
+};
 
 
 

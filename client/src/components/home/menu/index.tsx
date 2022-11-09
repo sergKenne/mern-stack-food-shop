@@ -1,5 +1,7 @@
 import React, { useEffect} from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { IProduct } from '../../../redux/commons.types';
 import { ReduxState} from '../../../redux/store';
 
 import { setMenuSlider, setTabs} from '../../../utils';
@@ -12,9 +14,15 @@ const Menu = () => {
         return products.filter(product => product.category === category) ;
     };
 
-    const getProductsType = () => {
-        return products.reduce((acc: any, curr: any) => curr.type ? [...acc, curr.type] : acc, [])
-    }
+    // const getProductsType = (products:IProduct[]) => {
+    //     return products.reduce((acc: any, curr: any) => curr.type ? [...acc, curr.type] : acc, [])
+    // }
+
+    // const getTabsElements = (category: string, products: IProduct[]) => {
+    //     const productsCat = products.filter(product => product.category === category); //getProductByCategory(category);
+    //     return [...new Set(productsCat.reduce((acc: any, curr: any) => curr.type ? [...acc, curr.type] : acc, []))]; //getProductsType(productsCat);
+    // }
+
 
     useEffect(() => {
         const tabItem = document.querySelectorAll('.menu__tabs-item');
@@ -25,7 +33,9 @@ const Menu = () => {
         setMenuSlider();
 
 
+        //MENUTABS
 
+        //MENUSLIDER
         document.querySelectorAll(".menu__slider").forEach(item => {
             if (item.getAttribute("data-tab") !== "burgers") {
                 item.classList.add("hide");
@@ -51,6 +61,7 @@ const Menu = () => {
 
 
 
+
     }, []);
 
     return (
@@ -63,28 +74,29 @@ const Menu = () => {
                     <li className="menu__nav-item" data-category="noodles" onClick={() =>  getProductByCategory("noodles")} >Noodles</li>
                 </ul>
 
-
-                {/* {!!products.length && (
-                    <ul className="menu__tabs">
-                        <li className="menu__tabs-item menu__tabs-item--active">All</li>
-                        {[...new Set(products)].map((elt: any) => (
-                            <li key={elt} className="menu__tabs-item">{elt}</li>
-                        ))}
-                    </ul>
-                )} */}
+                {/* {["noodles", "pizza", "sushi", "burgers"].map(cat => {
+                   return !!getTabsElements(cat).length && (
+                       <ul className="menu__tabs" data-tab={cat}>
+                            <li className="menu__tabs-item menu__tabs-item--active">All</li>
+                            {[...new Set(getTabsElements(cat))].map((elt: any) => (
+                                <li key={elt} className="menu__tabs-item">{elt}</li>
+                            ))}
+                        </ul>
+                    )})
+                } */}
 
                 <div className='menu__wrap-content-tabs'>
                     {["noodles", "pizza", "sushi", "burgers"].map((cat, ind) => (
                         <div key={`${cat}-${ind}`} className="menu__slider" data-tab={cat}>
                             <div className="menu-slider">
-                                {getProductByCategory(cat).slice(0,4).map((prod:any) => (
+                                {getProductByCategory(cat).slice(0,6).map((prod:any) => (
                                     <div className="menu__slide-item" key={prod.img}>
                                         <Card product={{ ...prod, addClass: "service__card" }} />
                                     </div>
                                 ))}
                                 <div className="menu__slide-item">
                                     <div className="card service__card service__card--view-more">
-                                        <button className='card__btn-view-more'>View more</button>
+                                        <Link to={`/products-category/${cat}`}><button className='card__btn-view-more'>View more</button></Link>
                                     </div>
                                 </div>
                             </div>

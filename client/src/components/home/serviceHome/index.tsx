@@ -11,6 +11,7 @@ import { ReduxState } from '../../../redux/store';
 import Loader from '../../commons/loader';
 import Card from '../../commons/card';
 import { setSlider } from '../../../utils';
+import { Link } from 'react-router-dom';
 
 
 
@@ -64,10 +65,10 @@ const ServiceHome = () => {
                                         <Card product={{ ...product, addClass: "service__card" }} />
                                     </div>
                                 ))}
-                                
+                            
                                 <div className="service__slide-item">
                                     <div className="card service__card service__card--view-more">
-                                        <button className='card__btn-view-more'>View more</button>
+                                        <Link to="/products-category/pizza"><button className='card__btn-view-more'>View more</button></Link>
                                     </div>
                                 </div>
                             </div>

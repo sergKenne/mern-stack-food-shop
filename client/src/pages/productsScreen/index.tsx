@@ -1,46 +1,58 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import InputRange from 'react-input-range';
 import 'react-input-range/lib/css/index.css';
+import { Link } from 'react-router-dom';
 import Card from '../../components/commons/card';
 
 
 import card from '../../images/card1.jpg'
+import { getTabsElements, setTabs } from '../../utils';
+import { useDispatch, useSelector } from 'react-redux';
+import { TypedDispatch, ReduxState } from '../../redux/store';
+import { getProductsByCategory } from '../../redux/reducers/productsCategoryReducer/actionCreators';
+import { IProduct } from '../../redux/commons.types';
+import Loader from '../../components/commons/loader';
 
 const Products = () => {
+    const { category } = useParams();
+    const dispatch = useDispatch<TypedDispatch>()
+    const { productsCategory, loading } = useSelector((state: ReduxState) => state.productsCategory);
+    const[productsFilter, setProductsFilter]=useState<IProduct[]>([])
     const [toggleSlide, setToggleSlide] = useState(false);
+    //const rangeRef = useRef()
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const [rangeValue, setRangeValue] = useState<any>({
         value: { min: 0, max: 345 },
     });
-    
 
-    //const rangeRef = useRef()
-    
+    const filterProductsByType = (name: string) => {
+        if (name !== "all") {
+            setProductsFilter(productsCategory.filter(el =>el.type === name)); 
+        } else {
+            setProductsFilter(productsCategory)
+        }
+    }
 
-    
+    useEffect(() => {
+        const tabItem = document.querySelectorAll('.menu__tabs-item');
+        setTabs(tabItem, 'menu__tabs-item--active'); 
+        setProductsFilter(productsCategory)
+    }, [productsCategory])
+
+    useEffect(() => {
+        category && dispatch(getProductsByCategory(category));
+    }, [])
 
     return (
         <div className="products">
             <div className="container">
                 <ul className="products__breadcrumb">
-                    <li className="products__b-item">Home</li>
-                    <li className="products__b-item">Shop</li>
-                    <li className="products__b-item">Steack</li>
+                    <li className="products__b-item"><Link to="/">Home</Link></li>
+                    <li className="products__b-item"><Link to="/shop">Shop</Link></li>
+                    <li className="products__b-item">{ category }</li>
                 </ul>
-                <h1 className="products__title">Steack</h1>
-                <div className="products__filter-sort">
-                    <span className="products__btn-show" onClick={() => setToggleSlide(true)}>
-                        <svg className="products__close-svg"><use xlinkHref="#svg-filter"></use></svg>
-                        <span>Filter</span>
-                    </span>
-                    <div className="products__filter-select">
-                        <select name="" id="">
-                            <option value="">filter1</option>
-                        <option value="">filter2</option>
-                        <option value="">filter3</option>
-                        </select>
-                    </div>
-                </div>
+                <h1 className="products__title">{category}</h1>
                 <div className="products__inner">
                     <div className={`products__filter ${toggleSlide ? "toggle-sidebar" : ""}`}>
                         <div className="products__filter-content">
@@ -104,136 +116,37 @@ const Products = () => {
                         </div>
                     </div>
                     <div className="products__items">
-                        {/* {
-                            [1, 2, 3, 4, 5, 6, 7, 8].map((prod, ind) => <Card key={ind} />)
-                        }
-                     */}
-                        {/* <div className="card products__card">
-                            <div className="card__header">
-                                <img src={card} alt="" className="card__img" />
-                            </div>
-                            <div className="card__body">
-                                <h5 className="card__title">Pizza Bianca</h5>
-                                <div className="card__icons">
-                                    <img className="card__icon" src="images/vegan.svg" alt="" />
-                                    <span>
-                                        <svg className="card__icon"><use xlinkHref="#svg-info"></use></svg>
-                                    </span>
-                                </div>
-                                <p className="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
-                                <div className="card__price">$13.99</div>
-                                <button className="card__btn">
-                                    <svg className="card__btn-icon"><use xlinkHref="#svg-cart"></use></svg>
-                                    <span>add to card</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div className="card products__card">
-                            <div className="card__header">
-                                <img src={card} alt="" className="card__img" />
-                            </div>
-                            <div className="card__body">
-                                <h5 className="card__title">Pizza Bianca</h5>
-                                <div className="card__icons">
-                                    <img className="card__icon" src="images/vegan.svg" alt="" />
-                                    <span>
-                                        <svg className="card__icon"><use xlinkHref="#svg-info"></use></svg>
-                                    </span>
-                                </div>
-                                <p className="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
-                                <div className="card__price">$13.99</div>
-                                <button className="card__btn">
-                                    <svg className="card__btn-icon"><use xlinkHref="#svg-cart"></use></svg>
-                                    <span>add to card</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div className="card products__card">
-                            <div className="card__header">
-                                <img src={card} alt="" className="card__img" />
-                            </div>
-                            <div className="card__body">
-                                <h5 className="card__title">Pizza Bianca</h5>
-                                <div className="card__icons">
-                                    <img className="card__icon" src="images/vegan.svg" alt="" />
-                                    <span>
-                                        <svg className="card__icon"><use xlinkHref="#svg-info"></use></svg>
-                                    </span>
-                                </div>
-                                <p className="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
-                                <div className="card__price">$13.99</div>
-                                <button className="card__btn">
-                                    <svg className="card__btn-icon"><use xlinkHref="#svg-cart"></use></svg>
-                                    <span>add to card</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div className="card products__card">
-                            <div className="card__header">
-                                <img src={card} alt="" className="card__img" />
-                            </div>
-                            <div className="card__body">
-                                <h5 className="card__title">Pizza Bianca</h5>
-                                <div className="card__icons">
-                                    <img className="card__icon" src="images/vegan.svg" alt="" />
-                                    <span>
-                                        <svg className="card__icon"><use xlinkHref="#svg-info"></use></svg>
-                                    </span>
-                                </div>
-                                <p className="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
-                                <div className="card__price">$13.99</div>
-                                <button className="card__btn">
-                                    <svg className="card__btn-icon"><use xlinkHref="#svg-cart"></use></svg>
-                                    <span>add to card</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div className="card products__card">
-                            <div className="card__header">
-                                <img src={card} alt="" className="card__img" />
-                            </div>
-                            <div className="card__body">
-                                <h5 className="card__title">Pizza Bianca</h5>
-                                <div className="card__icons">
-                                    <img className="card__icon" src="images/vegan.svg" alt="" />
-                                    <span>
-                                        <svg className="card__icon"><use xlinkHref="#svg-info"></use></svg>
-                                    </span>
-                                </div>
-                                <p className="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
-                                <div className="card__price">$13.99</div>
-                                <button className="card__btn">
-                                    <svg className="card__btn-icon"><use xlinkHref="#svg-cart"></use></svg>
-                                    <span>add to card</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div className="card products__card">
-                            <div className="card__header">
-                                <img src={card} alt="" className="card__img" />
-                            </div>
-                            <div className="card__body">
-                                <h5 className="card__title">Pizza Bianca</h5>
-                                <div className="card__icons">
-                                    <img className="card__icon" src="images/vegan.svg" alt="" />
-                                    <span>
-                                        <svg className="card__icon"><use xlinkHref="#svg-info"></use></svg>
-                                    </span>
-                                </div>
-                                <p className="card__description">Garlic Flatbread with Mozzarella · Parmesan · Garlic · Rosemary</p>
-                                <div className="card__price">$13.99</div>
-                                <button className="card__btn">
-                                  <svg className="card__btn-icon"><use xlinkHref="#svg-cart"></use></svg>
-                                  <span>add to card</span>
-                                </button>
+                        <div className="products__filter-sort">
+                            <span className="products__btn-show" onClick={() => setToggleSlide(true)}>
+                                <svg className="products__close-svg"><use xlinkHref="#svg-filter"></use></svg>
+                                <span>Filter</span>
+                            </span>
+                            
+                            {category && !!getTabsElements(category, productsCategory).length && (
+                                <ul className="menu__tabs">
+                                    <li className="menu__tabs-item menu__tabs-item--active" onClick={() => filterProductsByType("all")}>All</li>
+                                    {getTabsElements(category, productsCategory).map((elt: any) => (
+                                            <li key={elt} className="menu__tabs-item" onClick={()=>filterProductsByType(elt)}>{elt}</li>
+                                        ))}
+                                    </ul>
+                                )
+                            }
 
-                                <button className="card__counter">
-                                    <span>-</span>
-                                    <span>1</span>
-                                    <span>+</span>
-                                </button>
+
+                            <div className="products__filter-select">
+                                <select name="" id="">
+                                    <option value="">filter1</option>
+                                    <option value="">filter2</option>
+                                    <option value="">filter3</option>
+                                </select>
                             </div>
-                        </div>  */}
+                        </div>
+                        <div className="products__content">
+                            {loading && <Loader />}
+                            {productsFilter.map(prod => (
+                                <Card key={prod.id} product={{ ...prod, addClass: "products__card" }} />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

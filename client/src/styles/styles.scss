@@ -62,6 +62,10 @@ a {
     display: block;
     width: 100%;
   }
+  &__body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   &__title {
     font-size: 20px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -145,6 +149,12 @@ a {
     &--detail {
       padding-top: 0;
       color: #9397a0;
+      a {
+        color: inherit;
+        &:hover {
+          color: #80848a;
+        }
+      }
     }
     &--subtotal {
       display: flex;
@@ -892,12 +902,9 @@ a {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999;
   }
 }
-
-
-
-
 
 .delivery {
   margin-top: 100px;
@@ -1338,7 +1345,8 @@ a {
   &__b-item {
     font-family: 'Roboto', sans-serif;
     color: #d0d4da;
-    font-size: 14px;
+    font-size: 15px;
+    text-transform: capitalize;
     &::after {
       content: "-";
       display: inline-block;
@@ -1347,6 +1355,12 @@ a {
     }
     &:last-child::after {
       display: none;
+    }
+    a {
+      color: inherit;
+      &:hover {
+        color: #a5aab3;
+      }
     }
   }
   &__title {
@@ -1382,11 +1396,22 @@ a {
   &__filter-sort {
     display: flex;
     justify-content: flex-end;
+    //test
+    width: 100%;
+    //justify-content: space-between;
+    align-items: center;
+    height: 40px;
     color: rgb(208, 212, 218);
     margin-bottom: 22px;
     cursor: pointer;
     @media screen and (max-width: 950px) {
       justify-content: space-between;
+    }
+  }
+  &__filter-select {
+    margin-left: auto;
+    @media screen and (max-width: 950px) {
+      margin-left: initial;
     }
   }
   &__btn-show {
@@ -1406,10 +1431,21 @@ a {
     margin-top: 30px;
     margin-bottom: 20px;
   }
+  &__content {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    //justify-content: center;
+    @media screen and (max-width: 600px) {
+      justify-content: center;
+    }
+  }
 }
 
 .error {
-  height: 60vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1437,6 +1473,11 @@ a {
     width: 40px;
   }
 
+}
+
+//SHOP
+.shop {
+  min-height: 80vh;
 }
 
 .footer {
@@ -1705,3 +1746,11 @@ a {
 
 }
 
+
+.load-spinner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
