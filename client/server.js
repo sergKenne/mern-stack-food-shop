@@ -1,17 +1,17 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const express = require('express');
-//const favicon = require('express-favicon');
-const path = require('path');
-const port = process.env.PORT || 8080;
-const app = express();
-//app.use(favicon(__dirname + '/build/favicon.ico'));
-
-app.use(express.static(__dirname));
-app.use(express.static(path.join(__dirname, 'build')));
-app.get('/ping', function (req, res) {
-  return res.send('pong');
+import { create, router as _router, defaults, rewriter } from 'json-server';
+const server = create();
+const router = _router('./db.json');
+const middlewares = defaults({
+  static: './build',
 });
-app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+const PORT = process.env.PORT || 8000;
+server.use(middlewares);
+server.use(
+  rewriter({
+    '/api/*': '/$1',
+  })
+);
+server.use(router);
+server.listen(PORT, () => {
+  console.log('Server is running');
 });
-app.listen(port);
