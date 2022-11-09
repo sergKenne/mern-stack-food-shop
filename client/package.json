@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "start": "node serve.js",
+    "start": "node server.js",
     "start:dev": "webpack serve --config webpack.dev.config.ts",
     "build": "webpack --config webpack.prod.config.ts",
     "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
