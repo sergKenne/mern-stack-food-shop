@@ -150,7 +150,7 @@
             "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza7.jpg",
             "category": "pizza",
             "type": "vegetarian",
-            "name": "Pizza Regina",
+            "name": "Pizza Regina Salt",
             "ingredients": [
                 "Tomato Sauce",
                 "Mozzarella",
@@ -203,7 +203,7 @@
             "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza9.jpg",
             "category": "pizza",
             "type": "mushrooms",
-            "name": "Pizza Regina",
+            "name": "Pizza Regina Moodle",
             "ingredients": [
                 "Tomato Sauce",
                 "Mozzarella",
@@ -229,7 +229,7 @@
             "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza10.jpg",
             "category": "pizza",
             "type": "meat",
-            "name": "Pizza Calabria",
+            "name": "Pizza Calamkambo",
             "ingredients": [
                 "Tomato Sauce",
                 "Mozzarella",
@@ -254,7 +254,7 @@
             "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza11.jpg",
             "category": "pizza",
             "type": "meat",
-            "name": "Pizza Regina",
+            "name": "Pizza Riondel",
             "ingredients": [
                 "Tomato Sauce",
                 "Mozzarella",
@@ -1221,7 +1221,7 @@
             "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza7.jpg",
             "category": "pizza",
             "type": "vegetarian",
-            "name": "Pizza Regina",
+            "name": "Pizza Regina Salt",
             "ingredients": [
                 "Tomato Sauce",
                 "Mozzarella",
@@ -1274,7 +1274,7 @@
             "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza9.jpg",
             "category": "pizza",
             "type": "mushrooms",
-            "name": "Pizza Regina",
+            "name": "Pizza Regina Moodle",
             "ingredients": [
                 "Tomato Sauce",
                 "Mozzarella",
@@ -1300,7 +1300,7 @@
             "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza10.jpg",
             "category": "pizza",
             "type": "meat",
-            "name": "Pizza Calabria",
+            "name": "Pizza Calamkambo",
             "ingredients": [
                 "Tomato Sauce",
                 "Mozzarella",
@@ -1325,7 +1325,7 @@
             "img": "http://sergekenne.bantuhosting.com/portfolio/food-shop/pizza11.jpg",
             "category": "pizza",
             "type": "meat",
-            "name": "Pizza Regina",
+            "name": "Pizza Riondel",
             "ingredients": [
                 "Tomato Sauce",
                 "Mozzarella",
