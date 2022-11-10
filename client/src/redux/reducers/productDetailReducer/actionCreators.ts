@@ -1,3 +1,4 @@
+import { HostName } from './../../commons.types';
 import axios from 'axios';
 import { ActionTypes, ActionProductDetail } from './actionTypes';
 import { Dispatch } from 'redux';
@@ -7,7 +8,7 @@ export const getProductDetail =
     dispatch({ type: ActionTypes.PRODUCT_DETAIL_REQUEST });
     try {
       const { data } = await axios.get(
-        `http://localhost:3000/products-categories/${id}`
+        `${HostName.LOCAL_HOST_NAME}/products-categories/${id}`
       );
       dispatch({
         type: ActionTypes.PRODUCT_DETAIL_SUCCESS,

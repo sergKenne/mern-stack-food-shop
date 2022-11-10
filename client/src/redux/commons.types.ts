@@ -1,3 +1,6 @@
+export enum HostName {
+  LOCAL_HOST_NAME = 'https://mern-stack-food-shop.herokuapp.com/', //http://localhost:3000
+}
 
 export type IProduct = {
   id: number;
