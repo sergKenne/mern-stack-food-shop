@@ -12,10 +12,7 @@ import Menu from '../../components/home/menu';
 import Personnels from '../../components/home/personnels';
 import Postes from '../../components/home/postes';
 import ServiceHome from '../../components/home/serviceHome';
-import { getProductsByCategory } from '../../redux/reducers/productsCategoryReducer/actionCreators';
-import { ReduxState, TypedDispatch } from '../../redux/store';
-
-
+import { ReduxState } from '../../redux/store';
 
 const Home = () => {
   const { products } = useSelector((state: ReduxState) => state.products)

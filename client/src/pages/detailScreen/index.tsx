@@ -13,7 +13,6 @@ const Detail = () => {
   const dispatch = useDispatch<TypedDispatch>()
   const { productDetail, loading } = useSelector((state: ReduxState) => state.productDetail);
 
-  //const { } = productDetail
 
   console.log("productDetail:", productDetail)
   const [counter, setCounter] = useState<number>(1)

@@ -5,7 +5,6 @@ import 'react-input-range/lib/css/index.css';
 import { Link } from 'react-router-dom';
 import Card from '../../components/commons/card';
 
-
 import card from '../../images/card1.jpg'
 import { getTabsElements, setTabs } from '../../utils';
 import { useDispatch, useSelector } from 'react-redux';
@@ -131,7 +130,6 @@ const Products = () => {
                                     </ul>
                                 )
                             }
-
 
                             <div className="products__filter-select">
                                 <select name="" id="">
