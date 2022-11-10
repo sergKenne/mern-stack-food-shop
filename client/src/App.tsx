@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom';
-import GridLoader from 'react-spinners/GridLoader';
+//import GridLoader from 'react-spinners/GridLoader';
 import Footer from './components/footer';
 import Header from './components/header';
 import Detail from './pages/detailScreen';
@@ -14,21 +14,12 @@ import Shop from './pages/shopScreen';
 
 const App = () => {
   const dispatch = useDispatch<TypedDispatch>();
-  const [loading, setLoading] = useState<boolean>(true);
+  
   
   useEffect(() => {
     dispatch(fetchProducts());
-    setTimeout(() => {
-      setLoading(false)
-    }, 3000)
   }, []);
 
-
-  // if (loading) {
-  //   return (<div className="load-spinner" >
-  //       <GridLoader color={'#fdfdfd'} loading={loading} size={20} />
-  //     </div >)
-  // } 
     return (
       <div className="page">
         <Header />

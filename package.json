@@ -1,7 +1,7 @@
 {
     "name": "mern-stack-food-shopping",
     "version": "1.0.0",
-    "description": "",
+    "description": "Food Shop",
     "main": "server.js",
     "engines": {
       "node": "16.17.0"
