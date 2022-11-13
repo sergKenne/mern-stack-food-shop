@@ -11,7 +11,7 @@ COPY . /app
 RUN npm install
 
 #Install the required files for the react-app in the frontend folder
-RUN npm install --prefix client
+RUN npm install --force --prefix client
 
 #Build React app
 RUN npm run --prefix client build
