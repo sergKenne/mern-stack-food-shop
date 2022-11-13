@@ -1,0 +1,20 @@
+#Start from the pre-existing official Node image
+FROM node:14
+
+# Working directory. "/usr/local/bin/" is what Heroku takes as the "root" folder. Files MUST be added here or they cannot be found!
+WORKDIR /usr/local/bin/mern-stack-food-shopping
+
+#Copy the app's source code into the image's filesystem
+COPY . /usr/local/bin/mern-stack-food-shopping/
+
+#Install the required dependency of expressJs. Runs in container root directory.
+RUN npm install
+
+#Install the required files for the react-app in the frontend folder
+RUN npm install --prefix client
+
+#Build React app
+RUN npm run --prefix client build
+
+#Run the app when container launches.
+CMD ["npm", "start"]

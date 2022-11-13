@@ -7,9 +7,9 @@
         "node": "16.17.0"
     },
     "scripts": {
-        "start:dev": "node server.js",
+        "start": "node server.js",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
         "server": "json-server --watch db.json",
-        "start": "concurrently \"npm run start:dev\" \"npm run server\" ",
         "client": "npm start --prefix client",
         "dev": "concurrently \"npm run server\" \"npm run client\" "
     },

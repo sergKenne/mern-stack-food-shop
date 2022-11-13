@@ -200,6 +200,9 @@ a {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     transition: opacity 0.15s linear;
+    &:hover {
+      background-color: #5ba73f;
+    }
     &--detail {
       width: initial;
       height: 52px;
@@ -883,6 +886,9 @@ a {
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
     cursor: pointer;
+    &:hover {
+      background-color: rgba(#5e646f, .2) ;
+    }
     @media screen and (max-width: 560px) {
       margin-bottom: 10px;
     }
@@ -890,6 +896,9 @@ a {
     &--active {
       background-color: #ffffff;
       color: #1d2331;
+      &:hover {
+        color: #ffffff;
+      }
     }
   }
   &__wrap-content-tabs {
