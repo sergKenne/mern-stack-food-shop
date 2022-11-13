@@ -1,5 +1,5 @@
 #Start from the pre-existing official Node image
-FROM node:14
+FROM node
 
 # Working directory. "/usr/local/bin/" is what Heroku takes as the "root" folder. Files MUST be added here or they cannot be found!
 WORKDIR /usr/local/bin/mern-stack-food-shopping
