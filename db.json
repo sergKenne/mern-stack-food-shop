@@ -140,8 +140,8 @@
             },
             "price": "7.71",
             "info": {
-                "calories": 163,
-                "totalFat": 4.7,
+                "calories": 463,
+                "totalFat": 4.87,
                 "carbohydrates": 20.4,
                 "protein": 11.67
             }
@@ -169,7 +169,7 @@
                 "calories": 163,
                 "totalFat": 4.7,
                 "carbohydrates": 20.4,
-                "protein": 7.6
+                "protein": 2.0
             }
         },
         {
@@ -193,10 +193,10 @@
             },
             "price": "17.71",
             "info": {
-                "calories": 163,
-                "totalFat": 4.7,
+                "calories": 83,
+                "totalFat": 0.7,
                 "carbohydrates": 20.4,
-                "protein": 7.6
+                "protein": 9.5
             }
         },
         {

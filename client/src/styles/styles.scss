@@ -1214,6 +1214,15 @@ a {
     margin-bottom: 17px;
     font-family: 'Roboto', sans-serif;
     color: #d0d4da;
+    &--noFound {
+      position: relative;
+      bottom: 140px;
+      @media screen and (max-width: 950px) {
+        bottom: initial;
+        top: 40px;
+        margin-bottom: 70px;
+      }
+    }
   }
 }
 

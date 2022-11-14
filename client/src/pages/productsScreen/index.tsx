@@ -12,6 +12,7 @@ import { TypedDispatch, ReduxState } from '../../redux/store';
 import { getProductsByCategory } from '../../redux/reducers/productsCategoryReducer/actionCreators';
 import { IProduct } from '../../redux/commons.types';
 import Loader from '../../components/commons/loader';
+import { getRandomValues } from 'crypto';
 
 const Products = () => {
     const { category } = useParams();
@@ -19,10 +20,9 @@ const Products = () => {
     const { productsCategory, loading } = useSelector((state: ReduxState) => state.productsCategory);
     const[productsFilter, setProductsFilter]=useState<IProduct[]>([])
     const [toggleSlide, setToggleSlide] = useState(false);
-    //const rangeRef = useRef()
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const [rangeValue, setRangeValue] = useState<any>({
-        value: { min: 0, max: 345 },
+        value: { min: 0, max: 110 },
     });
 
     const filterProductsByType = (name: string) => {
@@ -31,6 +31,12 @@ const Products = () => {
         } else {
             setProductsFilter(productsCategory)
         }
+    }
+
+    const getProductsByPriceFiltered = () => {
+        return [...productsFilter].filter(item => {
+            return item.price >= rangeValue.value.min && item.price <= rangeValue.value.max
+        })
     }
 
     useEffect(() => {
@@ -61,21 +67,18 @@ const Products = () => {
                             <h4 className="products__filter-title">Filter by price</h4>
                             <div className="products__range">
                                 <InputRange
-                                    maxValue={345}
+                                    maxValue={110}
                                     minValue={0}
                                     value={rangeValue.value}
-                                    //ref={rangeRef}
                                     data-filter="range"
                                     onChange={(value) => { setRangeValue({ value }); }}
-                                //onChangeComplete={(value) => console.log(value)}
                                 />
                                 <p className="card__description">Price: <span>${rangeValue.value.min}</span> - <span>${rangeValue.value.max}</span></p>
                             </div>
-
-                            <button className="card__btn card__btn--range">
+                            {/* <button className="card__btn card__btn--range">
                                 <span>Filter</span>
-                            </button>
-                            <br/><br/>
+                            </button> */}
+                            <br/>
                             <h4 className="products__filter-title">Cart</h4>
                             <div className="product__filter-cart">
                                 <div className="card card--corbage">
@@ -141,7 +144,10 @@ const Products = () => {
                         </div>
                         <div className="products__content">
                             {loading && <Loader />}
-                            {productsFilter.map(prod => (
+                            {!getProductsByPriceFiltered().length && (
+                                <p className='info__description info__description--noFound'>No products were found matching your selection.</p>
+                            )}
+                            {getProductsByPriceFiltered().map(prod => (
                                 <Card key={prod.id} product={{ ...prod, addClass: "products__card" }} />
                             ))}
                         </div>
