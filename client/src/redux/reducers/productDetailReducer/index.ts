@@ -1,7 +1,5 @@
-
 import { ActionTypes, ActionProductDetail } from './actionTypes';
 import { IStateProductDetail } from './types';
-
 
 const initialState = {
   productDetail: null,
@@ -9,7 +7,10 @@ const initialState = {
   error: '',
 };
 
-const productDetailReducer = (state: IStateProductDetail = initialState, action: ActionProductDetail) => {
+const productDetailReducer = (
+  state: IStateProductDetail = initialState,
+  action: ActionProductDetail
+) => {
   switch (action.type) {
     case ActionTypes.PRODUCT_DETAIL_REQUEST:
       return {

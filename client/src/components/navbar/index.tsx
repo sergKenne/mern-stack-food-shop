@@ -13,8 +13,10 @@ const Navbar = () => {
       </span>
       <div className="container">
         <ul className="navbar__list">
-          {MENU_DATA?.map((item, index)=><NavbarItem key={index} category={item.category} icon={item.icon} />)}
-          
+          {MENU_DATA?.map((item, index) => (
+            <NavbarItem key={index} category={item.category} icon={item.icon} />
+          ))}
+
           <li>
             <div className="navbar__mobile-phone">
               <div className="header__phone">
@@ -29,7 +31,9 @@ const Navbar = () => {
               </a>
             </div>
             <div className="navbar__socials">
-              {MENU_SOCIAL?.map(item => <NavbarSocial key={ item } icon={ item } />)}
+              {MENU_SOCIAL?.map((item) => (
+                <NavbarSocial key={item} icon={item} />
+              ))}
             </div>
             <span className="navbar__corbage">
               <svg className="header__right-svg">

@@ -797,4 +797,4 @@ const DB_PRODUCTS = {
   ],
 };
 
-export default DB_PRODUCTS
+export default DB_PRODUCTS;

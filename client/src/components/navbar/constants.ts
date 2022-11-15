@@ -11,4 +11,3 @@ export const MENU_DATA: NavbarItemProps[] = [
 ];
 
 export const MENU_SOCIAL: string[] = ['facebook', 'instagram', 'twitter'];
- 

@@ -1,5 +1,4 @@
-import { IProduct } from "../../commons.types";
-
+import { IProduct } from '../../commons.types';
 
 export enum ActionTypes {
   PRODUCT_LIST_REQUEST = 'PRODUCT_LIST_REQUEST',
@@ -8,18 +7,17 @@ export enum ActionTypes {
 }
 
 interface ActionRequest {
-    type: ActionTypes.PRODUCT_LIST_REQUEST
+  type: ActionTypes.PRODUCT_LIST_REQUEST;
 }
 
 interface ActionSuccess {
-    type: ActionTypes.PRODUCT_LIST_SUCCESS,
-    payload: IProduct[]
+  type: ActionTypes.PRODUCT_LIST_SUCCESS;
+  payload: IProduct[];
 }
 
 interface ActionError {
-    type: ActionTypes.PRODUCT_LIST_ERROR,
-    payload: string | null
+  type: ActionTypes.PRODUCT_LIST_ERROR;
+  payload: string | null;
 }
 
 export type Action = ActionError | ActionRequest | ActionSuccess;
-

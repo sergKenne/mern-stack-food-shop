@@ -1,5 +1,5 @@
 import { Action, ActionTypes } from './actionTypes';
-import { IStateProducts } from "./type";
+import { IStateProducts } from './type';
 
 const initialState = {
   products: [],
@@ -10,14 +10,14 @@ const initialState = {
 const productReducer = (
   state: IStateProducts = initialState,
   action: Action
-):IStateProducts => {
+): IStateProducts => {
   switch (action.type) {
-    case ActionTypes.PRODUCT_LIST_REQUEST :
+    case ActionTypes.PRODUCT_LIST_REQUEST:
       return {
         ...state,
         loading: true,
       };
-    case ActionTypes.PRODUCT_LIST_SUCCESS :
+    case ActionTypes.PRODUCT_LIST_SUCCESS:
       return {
         ...state,
         products: action.payload,

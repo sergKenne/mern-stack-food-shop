@@ -18,5 +18,3 @@ export type TypedDispatch = ThunkDispatch<ReduxState, any, AnyAction>;
 //   unknown,
 //   AnyAction
 // >;
-
-

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
+import React from 'react';
 import { useSelector } from 'react-redux';
 require('../../../node_modules/slick-carousel/slick/slick.js');
 
@@ -15,8 +14,8 @@ import ServiceHome from '../../components/home/serviceHome';
 import { ReduxState } from '../../redux/store';
 
 const Home = () => {
-  const { products } = useSelector((state: ReduxState) => state.products)
-  
+  const { products } = useSelector((state: ReduxState) => state.products);
+
   return (
     <>
       <Banner />
@@ -27,7 +26,7 @@ const Home = () => {
       <Personnels />
       <HappyHour />
       <Postes />
-      <Info/>
+      <Info />
     </>
   );
 };

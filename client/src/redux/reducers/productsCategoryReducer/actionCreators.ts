@@ -7,7 +7,9 @@ export const getProductsByCategory =
   (category: string) => async (dispatch: Dispatch<ActionProductsCategory>) => {
     dispatch({ type: ActionTypes.PRODUCT_CATEGORY_LIST_REQUEST });
     try {
-      const { data } = await axios.get(`${HostName.LOCAL_HOST_NAME}/${category}`);
+      const { data } = await axios.get(
+        `${HostName.LOCAL_HOST_NAME}/${category}`
+      );
       dispatch({
         type: ActionTypes.PRODUCT_CATEGORY_LIST_SUCCESS,
         payload: data,

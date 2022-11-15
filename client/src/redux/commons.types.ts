@@ -1,5 +1,5 @@
 export enum HostName {
-  LOCAL_HOST_NAME ='http://localhost:3000', // 'https://mern-stack-food-shop.herokuapp.com/', //
+  LOCAL_HOST_NAME = 'http://localhost:3000', // 'https://mern-stack-food-shop.herokuapp.com/', //
 }
 
 export type IProduct = {
@@ -20,4 +20,5 @@ export type IProduct = {
     protein: number;
   };
   type?: string;
+  qty?: number;
 };

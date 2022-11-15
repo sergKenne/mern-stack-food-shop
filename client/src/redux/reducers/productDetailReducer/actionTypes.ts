@@ -20,7 +20,4 @@ interface ActionError {
   payload: string | null;
 }
 
-export type ActionProductDetail =
-  | ActionError
-  | ActionRequest
-  | ActionSuccess;
+export type ActionProductDetail = ActionError | ActionRequest | ActionSuccess;

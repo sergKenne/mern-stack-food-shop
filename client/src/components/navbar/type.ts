@@ -1,9 +1,8 @@
-
 export type NavbarItemProps = {
-    category: string;
-    icon: string
-}
+  category: string;
+  icon: string;
+};
 
 export type NavbarSocialProps = {
-    icon: string
-}
+  icon: string;
+};

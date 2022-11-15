@@ -1,4 +1,3 @@
-
 export type CardInfoProps = {
   setToggleInfo: React.Dispatch<React.SetStateAction<boolean>>;
   toggleInfo: boolean;
@@ -27,5 +26,6 @@ export type CardProps = {
     };
     addClass?: string;
     type?: string;
-  }
+    qty?: number;
+  };
 };

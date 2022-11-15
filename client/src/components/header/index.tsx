@@ -4,9 +4,14 @@ import { Link } from 'react-router-dom';
 import logo from '../../images/header-logo.svg';
 import Navbar from '../navbar';
 import SpreadSvg from '../home/spreadSvg';
+import { useSelector, useDispatch } from 'react-redux';
+import { ReduxState, TypedDispatch } from '../../redux/store';
+import { getTotalCartPrice, getTotalCartQty } from '../../utils';
+import { deleteProductsFromCart } from '../../redux/reducers/cartReducer/actionCreator';
 
 const Header = () => {
-
+  const dispatch = useDispatch<TypedDispatch>();
+  const { cart } = useSelector((state: ReduxState) => state.cart);
   return (
     <>
       <SpreadSvg />
@@ -63,12 +68,77 @@ const Header = () => {
                   <use xlinkHref="#svg-wishlist"></use>
                 </svg>
               </span>
-              <span>
-                <svg className="header__right-svg header__right-svg--cart">
-                  <use xlinkHref="#svg-cart"></use>
-                </svg>
-                <span className="header__total-price">$123.4</span>
-              </span>
+              <div className="header__cart">
+                <Link to="/cart">
+                  <svg className="header__right-svg header__right-svg--cart">
+                    <use xlinkHref="#svg-cart"></use>
+                  </svg>
+                  <span className="header__cart-counter">
+                    {getTotalCartQty(cart)}
+                  </span>
+                  <span className="header__total-price">
+                    ${getTotalCartPrice(cart)}
+                  </span>
+                </Link>
+                <div className="header__cart-list">
+                  <div className="products__filter-content products__filter-content--cart">
+                    <div className="product__filter-cart">
+                      {!cart?.length ? (
+                        <p>No products in the cart.</p>
+                      ) : (
+                        <>
+                          {cart?.map((prod: any) => (
+                            <div className="card card--corbage" key={prod.id}>
+                              <span
+                                className="card__delete-icon"
+                                onClick={() =>
+                                  dispatch(deleteProductsFromCart(prod))
+                                }
+                              >
+                                ×
+                              </span>
+                              <div className="card__header card__header--corbage">
+                                <img
+                                  src={prod.img}
+                                  alt=""
+                                  className="card__img"
+                                />
+                              </div>
+                              <div className="card__body">
+                                <h5 className="card__title card__title--corbage">
+                                  {prod.name}
+                                </h5>
+                                <p className="card__description">
+                                  <span>{prod.qty}</span> × $
+                                  <span>{prod.price}</span>
+                                </p>
+                              </div>
+                            </div>
+                          ))}
+                          <div className="products__filter-subtotal">
+                            <p className="card__description card__description--subtotal">
+                              <span>Subtotal:</span>
+                              <span className="card__filter-price">
+                                ${getTotalCartPrice(cart)}
+                              </span>
+                            </p>
+                          </div>
+                          <div className="products__filter-btn">
+                            <button className="card__btn card__btn--range">
+                              <span>
+                                <Link to="/cart">View Cart</Link>
+                              </span>
+                            </button>
+                            <button className="card__btn card__btn--filter">
+                              <span>Checkout</span>
+                            </button>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
