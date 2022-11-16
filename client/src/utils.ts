@@ -15,7 +15,7 @@ export const setSlider = (): void => {
 
   //Service slider
   $('.service-slider').slick({
-    infinite: true,
+    infinite: false,
     initialSlide: 2,
     speed: 500,
     slidesToShow: 2,
@@ -58,7 +58,7 @@ export const setSlider = (): void => {
 
 export function setMenuSlider() {
   $('.menu-slider').slick({
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,

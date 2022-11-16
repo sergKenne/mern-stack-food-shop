@@ -43,8 +43,8 @@ const ServiceHome = () => {
                 {products.length &&
                   products
                     .filter((item) => item.category === 'pizza')
-                    .slice(1, 6)
-                    .map((product, ind) => (
+                    .slice(1, 5)
+                    .map((product) => (
                       <div
                         key={`${Math.random()}${new Date()}`}
                         className="service__slide-item"

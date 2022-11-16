@@ -21,7 +21,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="page">
+    <div className="page" id="top">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -32,6 +32,9 @@ const App = () => {
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
+      <a className="linkToHome" href="#top">
+        <svg className="linkToHome__svg"><use xlinkHref="#svg-to-top"></use></svg>
+      </a> 
     </div>
   );
 };

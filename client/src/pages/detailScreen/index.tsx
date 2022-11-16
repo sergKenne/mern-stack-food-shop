@@ -112,22 +112,20 @@ const Detail = () => {
                         +
                       </span>
                     </button>
-                    <button className="card__btn card__btn--detail">
+                      <button className="card__btn card__btn--detail" onClick={() => {
+                        increamentCounter();
+                        new Promise((resolve) => {
+                          if (!!productDetail) {
+                            resolve(productDetail);
+                          }
+                        }).then((product: any) =>
+                          dispatch(addProductToCart(product))
+                        );
+                      }}>
                       <svg className="card__btn-icon">
                         <use xlinkHref="#svg-cart"></use>
                       </svg>
-                      <span
-                        onClick={() => {
-                          increamentCounter();
-                          new Promise((resolve) => {
-                            if (!!productDetail) {
-                              resolve(productDetail);
-                            }
-                          }).then((product: any) =>
-                            dispatch(addProductToCart(product))
-                          );
-                        }}
-                      >
+                      <span>
                         Add to card
                       </span>
                     </button>
