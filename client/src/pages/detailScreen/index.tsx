@@ -51,7 +51,7 @@ const Detail = () => {
                       <Link to="/shop">Shop - </Link>
                     </span>
                     <span>
-                      <Link to="/products-category/pizza">
+                      <Link to={`/products-category/${productDetail?.category}`}>
                         {productDetail?.category} -{' '}
                       </Link>
                     </span>

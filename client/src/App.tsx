@@ -12,6 +12,7 @@ import fetchProducts from './redux/reducers/productsReducer/actionCreators';
 import { TypedDispatch } from './redux/store';
 import Shop from './pages/shopScreen';
 import ProductsCart from './pages/cartScreen';
+import NavbarFooter from './components/navbarFooter';
 
 const App = () => {
   const dispatch = useDispatch<TypedDispatch>();
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/products-category/:category" element={<Products />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <NavbarFooter/>
       <Footer />
       <a className="linkToHome" href="#top">
         <svg className="linkToHome__svg"><use xlinkHref="#svg-to-top"></use></svg>
