@@ -126,3 +126,16 @@ export const getTotalCartPrice = (cart: IProduct[] | null) => {
   }, 0);
   return total?.toFixed(2);
 };
+
+
+
+export function setSmoothScrool() {
+  window.addEventListener('scroll', function () {
+    const elt = document.querySelector('.linkToHome') as HTMLElement;
+    if (window.scrollY > 500) {
+      elt.style.right = '30px';
+    } else {
+      elt.style.right = '-47px';
+    }
+  });
+}

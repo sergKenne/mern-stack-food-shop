@@ -13,12 +13,16 @@ import { TypedDispatch } from './redux/store';
 import Shop from './pages/shopScreen';
 import ProductsCart from './pages/cartScreen';
 import NavbarFooter from './components/navbarFooter';
+import { Link } from "react-scroll";
+import { setSmoothScrool } from './utils';
+
 
 const App = () => {
   const dispatch = useDispatch<TypedDispatch>();
 
   useEffect(() => {
     dispatch(fetchProducts());
+    setSmoothScrool()
   }, []);
 
   return (
@@ -34,11 +38,18 @@ const App = () => {
       </Routes>
       <NavbarFooter />
       <Footer />
-      <a className="linkToHome" href="#top">
+      <Link
+        className="linkToHome"
+        to="top"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+      >
         <svg className="linkToHome__svg">
           <use xlinkHref="#svg-to-top"></use>
         </svg>
-      </a>
+      </Link>
     </div>
   );
 };
