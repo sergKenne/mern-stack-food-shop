@@ -15,7 +15,7 @@ const Shop = () => {
   const { products, loading } = useSelector(
     (state: ReduxState) => state.products
   );
-  
+
   const { cart } = useSelector((state: ReduxState) => state.cart);
   const [toggleSlide, setToggleSlide] = useState(false);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -47,8 +47,9 @@ const Shop = () => {
         <h1 className="products__title">Shop</h1>
         <div className="products__inner">
           <div
-            className={`products__filter ${toggleSlide ? 'toggle-sidebar' : ''
-              }`}
+            className={`products__filter ${
+              toggleSlide ? 'toggle-sidebar' : ''
+            }`}
           >
             <div className="products__filter-content">
               <span
@@ -150,7 +151,7 @@ const Shop = () => {
                 </select>
               </div>
             </div>
-           
+
             <div className="products__content">
               {loading && <Loader />}
               {!loading && !getProductsByPriceFiltered().length && (

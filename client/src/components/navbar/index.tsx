@@ -43,7 +43,6 @@ const Navbar = () => {
               ))}
             </div>
             <span className="navbar__corbage">
-             
               <div className="header__cart">
                 <Link to="/cart">
                   <svg className="header__right-svg header__right-svg--cart">
@@ -52,7 +51,7 @@ const Navbar = () => {
                   <span className="header__cart-counter">
                     {getTotalCartQty(cart)}
                   </span>
-                  <span className="header__total-price" >
+                  <span className="header__total-price">
                     ${getTotalCartPrice(cart)}
                   </span>
                 </Link>
@@ -60,7 +59,9 @@ const Navbar = () => {
                   <div className="products__filter-content products__filter-content--cart">
                     <div className="product__filter-cart">
                       {!cart?.length ? (
-                        <p style={{color:"#fff"}}>No products in the cart.</p>
+                        <p style={{ color: '#fff' }}>
+                          No products in the cart.
+                        </p>
                       ) : (
                         <>
                           {cart?.map((prod: any) => (
@@ -115,7 +116,6 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-
             </span>
           </li>
         </ul>

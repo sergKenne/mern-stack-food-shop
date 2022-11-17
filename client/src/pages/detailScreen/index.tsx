@@ -51,7 +51,9 @@ const Detail = () => {
                       <Link to="/shop">Shop - </Link>
                     </span>
                     <span>
-                      <Link to={`/products-category/${productDetail?.category}`}>
+                      <Link
+                        to={`/products-category/${productDetail?.category}`}
+                      >
                         {productDetail?.category} -{' '}
                       </Link>
                     </span>
@@ -112,7 +114,9 @@ const Detail = () => {
                         +
                       </span>
                     </button>
-                      <button className="card__btn card__btn--detail" onClick={() => {
+                    <button
+                      className="card__btn card__btn--detail"
+                      onClick={() => {
                         increamentCounter();
                         new Promise((resolve) => {
                           if (!!productDetail) {
@@ -121,13 +125,12 @@ const Detail = () => {
                         }).then((product: any) =>
                           dispatch(addProductToCart(product))
                         );
-                      }}>
+                      }}
+                    >
                       <svg className="card__btn-icon">
                         <use xlinkHref="#svg-cart"></use>
                       </svg>
-                      <span>
-                        Add to card
-                      </span>
+                      <span>Add to card</span>
                     </button>
                   </div>
                 </div>

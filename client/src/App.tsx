@@ -32,11 +32,13 @@ const App = () => {
         <Route path="/products-category/:category" element={<Products />} />
         <Route path="*" element={<Error />} />
       </Routes>
-      <NavbarFooter/>
+      <NavbarFooter />
       <Footer />
       <a className="linkToHome" href="#top">
-        <svg className="linkToHome__svg"><use xlinkHref="#svg-to-top"></use></svg>
-      </a> 
+        <svg className="linkToHome__svg">
+          <use xlinkHref="#svg-to-top"></use>
+        </svg>
+      </a>
     </div>
   );
 };
