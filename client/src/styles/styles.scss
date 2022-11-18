@@ -1260,15 +1260,6 @@ a {
     margin-bottom: 17px;
     font-family: 'Roboto', sans-serif;
     color: #d0d4da;
-    &--noFound {
-      // position: relative;
-      // bottom: 140px;
-      // @media screen and (max-width: 950px) {
-      //   bottom: initial;
-      //   top: 40px;
-      //   margin-bottom: 70px;
-      // }
-    }
   }
 }
 
@@ -1911,7 +1902,6 @@ a {
 }
 
 //Range Slider
-
 .products__filter-content {
   .input-range__track {
     background: #5e646f;
@@ -1922,12 +1912,10 @@ a {
     border: 3px solid #6fba54;
     background-color: #1d2331;
     border-radius: 100%;
-    //top: 50%;
   }
 
   .input-range__label--min,
   .input-range__label--max {
-    //left: 0;
     display: none;
   }
 
@@ -1968,7 +1956,7 @@ a {
   position: fixed;
   bottom: 100px;
   right: -47px;
-  //right: 20px;
+  cursor: pointer;
   transition: all 0.2s ease-in;
   z-index: 9999;
 
@@ -1976,22 +1964,4 @@ a {
     width: 18px;
     height: 18px;
   }
-
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // width: 46px;
-  // height: 46px;
-  // border-radius: 4px;
-  // position: fixed;
-  // background-color: #ffffff;
-  // right: 80px;
-  // bottom: 106px;
-  // bottom: 100px;
-  // right: -40px;
-  // z-index: 1300;
-  // cursor: pointer;
-  // opacity: 0;
-  // visibility: hidden;
-  // transition: opacity 0.2s linear,visibility 0.2s
 }
