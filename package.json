@@ -9,7 +9,7 @@
     "scripts": {
         "start:dev": "node server.js",
         "server": "json-server --watch db.json",
-        "start": "concurrently \"npm run start:dev\" \"npm run server\" ",
+        "start": "concurrently  \"npm run server\" \"npm run start:dev\" ",
         "client": "npm start --prefix client",
         "dev": "concurrently \"npm run server\" \"npm run client\" "
     },
