@@ -1,4 +1,4 @@
-import { HostName } from './../../commons.types';
+import { HostName, IProduct } from './../../commons.types';
 import axios from 'axios';
 import { ActionTypes, ActionProductDetail } from './actionTypes';
 import { Dispatch } from 'redux';
@@ -11,7 +11,7 @@ export const getProductDetail =
       // const { data } = await axios.get(
       //   `${HostName.LOCAL_HOST_NAME}/products-categories/${id}`
       // );
-      const data = DB_PRODUCTS['products-categories'].find((el) => el.id == Number(id));
+      const data = DB_PRODUCTS['products-categories'].find((el:IProduct) => el.id == Number(id));
       if(!data) throw new Error("product not found");
       
       dispatch({

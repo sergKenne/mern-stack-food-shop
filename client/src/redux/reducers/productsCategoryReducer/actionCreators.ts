@@ -1,8 +1,9 @@
-import { HostName } from './../../commons.types';
+import { HostName, IProduct } from './../../commons.types';
 import axios from 'axios';
 import { ActionProductsCategory, ActionTypes } from './actionTypes';
 import { Dispatch } from 'redux';
 import DB_PRODUCTS from '../../../../../db';
+
 
 export const getProductsByCategory =
   (category: string) => async (dispatch: Dispatch<ActionProductsCategory>) => {
@@ -12,7 +13,7 @@ export const getProductsByCategory =
       //   `${HostName.LOCAL_HOST_NAME}/${category}`
       // );
       const data = DB_PRODUCTS['products-categories'].filter(
-        (el) => el.category == category
+        (el:IProduct) => el.category == category
       );
       if (!data) throw new Error('product not found');
       dispatch({
