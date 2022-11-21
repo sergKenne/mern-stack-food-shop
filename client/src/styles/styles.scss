@@ -1650,6 +1650,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 9999;
   @media screen and (max-width: 950px) {
     display: block;
   }
