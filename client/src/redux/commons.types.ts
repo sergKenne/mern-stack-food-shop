@@ -1,7 +1,7 @@
 export enum HostName {
-  //LOCAL_HOST_NAME = 'http://localhost:3000', 
+  LOCAL_HOST_NAME = 'http://localhost:3000', 
 
-  LOCAL_HOST_NAME ="https://food-shop-tscript.herokuapp.com",
+  //LOCAL_HOST_NAME ="https://food-shop-tscript.herokuapp.com",
 }
 
 export type IProduct = {
