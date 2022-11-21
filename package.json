@@ -11,7 +11,8 @@
         "server": "json-server --watch db.json",
         "client": "npm start --prefix client",
         "dev": "concurrently \"npm run server\" \"npm run client\" ",
-        "start": "concurrently \"npm run server\" \"npm run start:dev\" "
+        "start": "concurrently \"npm run server\" \"npm run start:dev\" ",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install "
     },
     "repository": {
         "type": "git",
