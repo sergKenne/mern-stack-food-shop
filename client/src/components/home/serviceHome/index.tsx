@@ -43,7 +43,7 @@ const ServiceHome = () => {
                 {products.length &&
                   products
                     .filter((item) => item.category === 'pizza')
-                    .slice(1, 5)
+                    .slice(1, 6)
                     .map((product) => (
                       <div
                         key={`${Math.random()}${new Date()}`}
