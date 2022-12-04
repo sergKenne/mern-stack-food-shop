@@ -9,11 +9,12 @@ export const getProductsByCategory =
   (category: string) => async (dispatch: Dispatch<ActionProductsCategory>) => {
     dispatch({ type: ActionTypes.PRODUCT_CATEGORY_LIST_REQUEST });
     try {
+      //for json server//
       // const { data } = await axios.get(
       //   `${HostName.LOCAL_HOST_NAME}/${category}`
       // );
       const data = DB_PRODUCTS['products-categories'].filter(
-        (el:IProduct) => el.category == category
+        (el: IProduct) => el.category == category
       );
       if (!data) throw new Error('product not found');
       dispatch({

@@ -8,6 +8,7 @@ export const getProductDetail =
   (id: string) => async (dispatch: Dispatch<ActionProductDetail>) => {
     dispatch({ type: ActionTypes.PRODUCT_DETAIL_REQUEST });
     try {
+      //for json server//
       // const { data } = await axios.get(
       //   `${HostName.LOCAL_HOST_NAME}/products-categories/${id}`
       // );

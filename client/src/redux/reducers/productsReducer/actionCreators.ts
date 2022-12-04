@@ -7,6 +7,7 @@ import DB_PRODUCTS from '../../../../../db';
 const fetchProducts = () => async (dispatch: Dispatch<Action>) => {
   dispatch({ type: ActionTypes.PRODUCT_LIST_REQUEST });
   try {
+    //for json server//
     // const { data } = await axios.get(
     //   `${HostName.LOCAL_HOST_NAME}/products-categories`
     // );
