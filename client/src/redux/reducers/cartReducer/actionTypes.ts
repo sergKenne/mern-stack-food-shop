@@ -1,5 +1,5 @@
 import { IProduct } from './../../commons.types';
-import { CardProps } from './../../../components/commons/card/type';
+//import { CardProps } from './../../../components/commons/card/type';
 
 export enum ActionTypes {
   ADD_PRODUCT_TO_CART = 'ADD_PRODUCT_TO_CART',

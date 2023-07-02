@@ -1,6 +1,6 @@
-import { HostName } from './../../commons.types';
+//import { HostName } from './../../commons.types';
 import { Action, ActionTypes } from './actionTypes';
-import axios from 'axios';
+//import axios from 'axios';
 import { Dispatch } from 'redux';
 import DB_PRODUCTS from '../../../../../db';
 
