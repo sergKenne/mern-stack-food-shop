@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import InputRange from 'react-input-range';
-// import 'react-input-range/lib/css/index.css';
+import Slider from "@mui/material/Slider";
 import { Link } from 'react-router-dom';
 import Card from '../../components/commons/card';
 import { getTotalCartPrice } from '../../utils';
@@ -19,15 +18,14 @@ const Shop = () => {
   const { cart } = useSelector((state: ReduxState) => state.cart);
   const [toggleSlide, setToggleSlide] = useState(false);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [rangeValue, setRangeValue] = useState<any>({
-    value: { min: 0, max: 110 },
-  });
+  const [range, setRange] = React.useState([0, 110]);
+  function handleChanges(event: any, newValue: any) {
+    setRange(newValue);
+  }
 
   const getProductsByPriceFiltered = () => {
     return [...products].filter((item) => {
-      return (
-        item.price >= rangeValue.value.min && item.price <= rangeValue.value.max
-      );
+      return Number(item.price) >= range[0] && Number(item.price) <= range[1]
     });
   };
 
@@ -62,18 +60,10 @@ const Shop = () => {
               </span>
               <h4 className="products__filter-title">Filter by price</h4>
               <div className="products__range">
-                {/* <InputRange
-                  maxValue={110}
-                  minValue={0}
-                  value={rangeValue.value}
-                  data-filter="range"
-                  onChange={(value) => {
-                    setRangeValue({ value });
-                  }}
-                /> */}
+                <Slider value={range} onChange={handleChanges} valueLabelDisplay="auto" />
                 <p className="card__description">
-                  Price: <span>${rangeValue.value.min}</span> -{' '}
-                  <span>${rangeValue.value.max}</span>
+                  Price: <span>${range[0]}</span> -{' '}
+                  <span>${range[1]}</span>
                 </p>
               </div>
               {/* <button className="card__btn card__btn--range">
