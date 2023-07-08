@@ -1450,7 +1450,7 @@ const DB_PRODUCTS = {
         isPerpper: true,
         isVegan: false,
       },
-      price: '18.49',
+      price: '68.49',
     },
     {
       id: 24,
@@ -1478,7 +1478,7 @@ const DB_PRODUCTS = {
         isPerpper: false,
         isVegan: false,
       },
-      price: '24.29',
+      price: '74.29',
     },
     {
       id: 26,
@@ -1526,7 +1526,7 @@ const DB_PRODUCTS = {
         isPerpper: false,
         isVegan: false,
       },
-      price: '4.29',
+      price: '44.29',
     },
     {
       id: 30,
@@ -1538,7 +1538,7 @@ const DB_PRODUCTS = {
         isPerpper: false,
         isVegan: false,
       },
-      price: '4.93',
+      price: '37.93',
     },
     {
       id: 31,
@@ -1562,7 +1562,7 @@ const DB_PRODUCTS = {
         isPerpper: false,
         isVegan: false,
       },
-      price: '8.29',
+      price: '98.29',
     },
     {
       id: 33,
@@ -1586,7 +1586,7 @@ const DB_PRODUCTS = {
         isPerpper: false,
         isVegan: false,
       },
-      price: '8.19',
+      price: '82.09',
     },
     {
       id: 35,
@@ -1598,7 +1598,7 @@ const DB_PRODUCTS = {
         isPerpper: false,
         isVegan: false,
       },
-      price: '4.29',
+      price: '56.29',
     },
     {
       id: 36,
@@ -1768,7 +1768,7 @@ const DB_PRODUCTS = {
         isPerpper: false,
         isVegan: false,
       },
-      price: '13.98',
+      price: '51.98',
     },
     {
       id: 50,
@@ -1864,7 +1864,7 @@ const DB_PRODUCTS = {
         isPerpper: false,
         isVegan: false,
       },
-      price: '4.21',
+      price: '14.21',
     },
     {
       id: 58,
@@ -1876,7 +1876,7 @@ const DB_PRODUCTS = {
         isPerpper: false,
         isVegan: false,
       },
-      price: '2.33',
+      price: '62.33',
     },
     {
       id: 59,

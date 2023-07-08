@@ -18,7 +18,7 @@ const Shop = () => {
   const { cart } = useSelector((state: ReduxState) => state.cart);
   const [toggleSlide, setToggleSlide] = useState(false);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [range, setRange] = React.useState([0, 110]);
+  const [range, setRange] = React.useState([0, 100]);
   function handleChanges(event: any, newValue: any) {
     setRange(newValue);
   }
