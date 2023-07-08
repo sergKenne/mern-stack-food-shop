@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import InputRange from 'react-input-range';
-import 'react-input-range/lib/css/index.css';
+// import InputRange from 'react-input-range';
+// import 'react-input-range/lib/css/index.css';
 import { Link } from 'react-router-dom';
 import Card from '../../components/commons/card';
 import { getTotalCartPrice } from '../../utils';
@@ -62,7 +62,7 @@ const Shop = () => {
               </span>
               <h4 className="products__filter-title">Filter by price</h4>
               <div className="products__range">
-                <InputRange
+                {/* <InputRange
                   maxValue={110}
                   minValue={0}
                   value={rangeValue.value}
@@ -70,7 +70,7 @@ const Shop = () => {
                   onChange={(value) => {
                     setRangeValue({ value });
                   }}
-                />
+                /> */}
                 <p className="card__description">
                   Price: <span>${rangeValue.value.min}</span> -{' '}
                   <span>${rangeValue.value.max}</span>
