@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MENU_DATA, MENU_SOCIAL } from './constants';
 import NavbarItem from './NavbarItem';
@@ -8,12 +8,15 @@ import { ReduxState, TypedDispatch } from '../../redux/store';
 import { getTotalCartPrice, getTotalCartQty } from '../../utils';
 import { deleteProductsFromCart } from '../../redux/reducers/cartReducer/actionCreator';
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar, setToggleSidebar }:any) => {
   const dispatch = useDispatch<TypedDispatch>();
+  //const [toggleNav, setToggleNav] = useState(false)
   const { cart } = useSelector((state: ReduxState) => state.cart);
+  const toggleNav = toggleSidebar ? "navbar toggle-sidebar" : "navbar";
+
   return (
-    <nav className="navbar" id="navbar">
-      <span className="header__menu-close" id="menu-close">
+    <nav className={toggleNav} onClick={() => setToggleSidebar(false)} id="navbar">
+      <span className="header__menu-close" id="menu-close" onClick={()=>setToggleSidebar(false)}>
         <svg className="header__bar-svg">
           <use xlinkHref="#svg-close"></use>
         </svg>

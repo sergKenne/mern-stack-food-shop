@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../../images/header-logo.svg';
@@ -12,6 +12,9 @@ import { deleteProductsFromCart } from '../../redux/reducers/cartReducer/actionC
 const Header = () => {
   const dispatch = useDispatch<TypedDispatch>();
   const { cart } = useSelector((state: ReduxState) => state.cart);
+  //test
+  const [toggleSidebar, setToggleSidebar] = useState<any>(false);
+
   return (
     <>
       <SpreadSvg />
@@ -32,7 +35,7 @@ const Header = () => {
         </div>
         <div className="header__middle">
           <div className="container header__middle-inner">
-            <span className="header__menu-bar" id="menu-bar">
+            <span className="header__menu-bar" id="menu-bar" onClick={() => setToggleSidebar(true)}>
               <svg className="header__bar-svg">
                 <use xlinkHref="#svg-menu"></use>
               </svg>
@@ -143,7 +146,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <Navbar />
+      <Navbar toggleSidebar={toggleSidebar} setToggleSidebar={setToggleSidebar}/>
     </>
   );
 };
