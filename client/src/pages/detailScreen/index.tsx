@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import Loader from '../../components/commons/loader';
 
 import {
@@ -11,6 +11,8 @@ import { getProductDetail } from '../../redux/reducers/productDetailReducer/acti
 import { ReduxState, TypedDispatch } from '../../redux/store';
 
 const Detail = () => {
+  const location = useLocation();
+  console.log("Location:", location.pathname);
   const params = useParams();
   const dispatch = useDispatch<TypedDispatch>();
   const { productDetail, loading } = useSelector(
@@ -25,6 +27,14 @@ const Detail = () => {
   const increamentCounter = () => {
     setCounter((prevState) => prevState + 1);
   };
+
+  useEffect(() => {
+    window.scrollTo({
+      top: -100,
+      left: 0,
+      behavior: "smooth",
+    })
+  },[location])
 
   useEffect(() => {
     params.id && dispatch(getProductDetail(params.id));
