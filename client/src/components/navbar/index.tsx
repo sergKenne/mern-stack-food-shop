@@ -7,12 +7,17 @@ import { useSelector, useDispatch } from 'react-redux';
 import { ReduxState, TypedDispatch } from '../../redux/store';
 import { getTotalCartPrice, getTotalCartQty } from '../../utils';
 import { deleteProductsFromCart } from '../../redux/reducers/cartReducer/actionCreator';
+import { IProduct } from '../../redux/commons.types';
 
-const Navbar = ({ toggleSidebar, setToggleSidebar }:any) => {
+type IProps = {
+  toggleSidebar: boolean,
+  setToggleSidebar: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const Navbar = ({ toggleSidebar, setToggleSidebar }:IProps) => {
   const dispatch = useDispatch<TypedDispatch>();
-  //const [toggleNav, setToggleNav] = useState(false)
   const { cart } = useSelector((state: ReduxState) => state.cart);
-  const toggleNav = toggleSidebar ? "navbar toggle-sidebar" : "navbar";
+  const toggleNav:string = toggleSidebar ? "navbar toggle-sidebar" : "navbar";
 
   return (
     <nav className={toggleNav} onClick={() => setToggleSidebar(false)} id="navbar">
@@ -26,7 +31,6 @@ const Navbar = ({ toggleSidebar, setToggleSidebar }:any) => {
           {MENU_DATA?.map((item, index) => (
             <NavbarItem key={index} category={item.category} icon={item.icon} />
           ))}
-
           <li>
             <div className="navbar__mobile-phone">
               <div className="header__phone">
@@ -67,7 +71,7 @@ const Navbar = ({ toggleSidebar, setToggleSidebar }:any) => {
                         </p>
                       ) : (
                         <>
-                          {cart?.map((prod: any) => (
+                          {cart?.map((prod:IProduct) => (
                             <div className="card card--corbage" key={prod.id}>
                               <span
                                 className="card__delete-icon"

@@ -87,9 +87,6 @@ const Products = () => {
                   <span>${range[1]}</span>
                 </p>
               </div>
-              {/* <button className="card__btn card__btn--range">
-                                <span>Filter</span>
-                            </button> */}
               <br />
               <h4 className="products__filter-title">Cart</h4>
               {!cart?.length ? (
@@ -179,11 +176,7 @@ const Products = () => {
                 )}
 
               <div className="products__filter-select">
-                <select name="" id="">
-                  <option value="">filter1</option>
-                  <option value="">filter2</option>
-                  <option value="">filter3</option>
-                </select>
+                {/*  */}
               </div>
             </div>
             <div className="products__content">

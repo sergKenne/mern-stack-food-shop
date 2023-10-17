@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, FC } from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../../images/header-logo.svg';
@@ -9,11 +9,11 @@ import { ReduxState, TypedDispatch } from '../../redux/store';
 import { getTotalCartPrice, getTotalCartQty } from '../../utils';
 import { deleteProductsFromCart } from '../../redux/reducers/cartReducer/actionCreator';
 
-const Header = () => {
+const Header:FC = () => {
+
   const dispatch = useDispatch<TypedDispatch>();
   const { cart } = useSelector((state: ReduxState) => state.cart);
-  //test
-  const [toggleSidebar, setToggleSidebar] = useState<any>(false);
+  const [toggleSidebar, setToggleSidebar] = useState<boolean>(false);
 
   return (
     <>

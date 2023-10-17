@@ -12,7 +12,6 @@ import { ReduxState, TypedDispatch } from '../../redux/store';
 
 const Detail = () => {
   const location = useLocation();
-  console.log("Location:", location.pathname);
   const params = useParams();
   const dispatch = useDispatch<TypedDispatch>();
   const { productDetail, loading } = useSelector(
@@ -73,7 +72,7 @@ const Detail = () => {
                     {productDetail?.name}
                   </h5>
                   <p className="card__description">
-                    {productDetail?.ingredients.map((ing: any) => (
+                    {productDetail?.ingredients.map((ing: string) => (
                       <span key={ing}>
                         {' · '}
                         {ing}

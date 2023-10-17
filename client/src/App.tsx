@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-//import GridLoader from 'react-spinners/GridLoader';
 import Footer from './components/footer';
 import Header from './components/header';
 import Detail from './pages/detailScreen';
