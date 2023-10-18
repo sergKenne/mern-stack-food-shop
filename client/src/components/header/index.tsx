@@ -61,7 +61,7 @@ const Header:FC = () => {
               <img className="header__logo-img" src={logo} alt="logo" />
             </Link>
             <div className="header__icons">
-              <span>
+              {/* <span>
                 <svg className="header__right-svg">
                   <use xlinkHref="#svg-search"></use>
                 </svg>
@@ -70,7 +70,7 @@ const Header:FC = () => {
                 <svg className="header__right-svg header__right-svg--wishlist">
                   <use xlinkHref="#svg-wishlist"></use>
                 </svg>
-              </span>
+              </span> */}
               <div className="header__cart">
                 <Link to="/cart">
                   <svg className="header__right-svg header__right-svg--cart">
